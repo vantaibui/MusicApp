@@ -1,0 +1,21 @@
+// Animation
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(0.25);
+  }
+  to {
+    transform: scale(1);
+  }
+}

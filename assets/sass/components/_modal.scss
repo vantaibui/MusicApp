@@ -1,0 +1,156 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  animation: growth linear 0.5s;
+  display: none;
+  &.active {
+    display: block;
+  }
+
+  .modal-overplay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #000, $alpha: 0.5);
+  }
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    // width: 70vw;
+    width: 100%;
+    max-width: 900px;
+    background-color: $bg-primary;
+    border-radius: 10px;
+    overflow: hidden;
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 20px 30px;
+      text-transform: capitalize;
+      color: $color-white-0;
+      .modal-title {
+        font-size: 2.4rem;
+      }
+      .modal-close {
+        cursor: pointer;
+        .icon--close {
+          width: 3.6rem;
+          height: 3.6rem;
+          font-size: 3.6rem;
+        }
+      }
+    }
+    .modal-body {
+      max-height: 50vh;
+      min-height: 500px;
+      padding: 0 30px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #351b5d;
+        border-radius: 50px;
+      }
+
+      .modal-body__title {
+        line-height: 1.6;
+        margin-bottom: $margin-3;
+        @include text($color-white-0, $fs-2, $fw-bold);
+      }
+      .card {
+        position: relative;
+        margin-bottom: $margin-8;
+        // padding: 0 $padding-2;
+        .card__content {
+          position: relative;
+          height: 100px;
+          //   overflow: hidden;
+          cursor: pointer;
+          &:hover {
+            .card__image {
+              .card__img {
+                transform: scale(1.2) translateZ(0);
+              }
+            }
+            .card__overplay,
+            .card__actions {
+              visibility: visible;
+            }
+          }
+          .card__image {
+            height: 100px;
+            border-radius: 4px;
+            overflow: hidden;
+            .card__img {
+              width: 100%;
+              height: 100%;
+              transition: transform 0.5s linear;
+            }
+          }
+          .card__overplay {
+            padding: $padding-9 $padding-9;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            background-color: rgba($color: #000, $alpha: 0.5);
+            transition: all 0.5s;
+            visibility: hidden;
+          }
+          .card__actions {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100%;
+            height: 100%;
+            padding: $padding-6 $padding-9;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            transition: all 0.5s;
+            visibility: hidden;
+            .action__btn {
+              margin: 0;
+              font-size: 0.8rem;
+              font-weight: $fw-medium;
+              padding: $padding-2 $padding-8;
+              transition: none;
+              &:last-child {
+                background-color: rgba(0, 0, 0, 0.3);
+                border-color: hsla(0, 0%, 100%, 0.5);
+              }
+            }
+          }
+        }
+        .card__footer {
+          padding: $padding-1 0;
+          @include text($color-white-0, 1.2rem, $fw-medium);
+        }
+      }
+    }
+  }
+}

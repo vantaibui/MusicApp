@@ -1,0 +1,165 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 240px;
+  z-index: 10;
+
+  width: 240px;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  //   height: calc(100% - 70px);
+  // height: 100vh;
+
+  background-color: #231b2e;
+  padding-top: $padding-2;
+  padding-bottom: 54px;
+  .sidebar__logo {
+    width: 240px;
+    height: 70px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: $padding-11 + 2;
+    padding-right: $padding-10 + 1;
+    .sidebar__img {
+      width: 120px;
+      height: 40px;
+      padding-bottom: $padding-1;
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+  .sidebar__main {
+    margin-top: $margin-3;
+    margin-bottom: $margin-6;
+    //    Navbar menu
+    .navbar-menu__item {
+      border-left: 3px solid transparent;
+      &.active {
+        background-color: $color-purple-2;
+        border-color: $color-purple-0;
+        .navbar-menu__link {
+          color: $color-white-0;
+        }
+      }
+      &:hover:not(.active) {
+        .navbar-menu__link {
+          color: $color-white-0;
+        }
+      }
+      .navbar-menu__link {
+        color: $color-white-1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        font-size: 1.3rem;
+        font-weight: $fw-bold;
+        padding: $padding-2 + 1 $padding-11;
+        .navbar-menu__icon {
+          width: 2.4rem;
+          height: 2.4rem;
+          font-size: 2.4rem;
+          margin-right: $margin-3;
+          &.navbar-menu__icon--personal {
+            margin-left: 0.5px;
+            padding: 2px 4.4px 3.4px 4.4px;
+            width: 1rem;
+            height: 1rem;
+            font-size: 1rem;
+            border: 1.6px solid rgba($color: #fff, $alpha: 0.7);
+            border-radius: 4px;
+            position: relative;
+            bottom: 0;
+            &:before {
+              content: "";
+              position: absolute;
+              top: -5px;
+              left: 15%;
+              right: 15%;
+              width: 70%;
+              height: 1px;
+              background-color: #fff;
+            }
+          }
+          &.navbar-menu__icon--border {
+            margin-left: 0.5px;
+            width: 1.7rem;
+            height: 1.7rem;
+            font-size: 1.7rem;
+            border: 1.6px solid rgba($color: #fff, $alpha: 0.75);
+            border-radius: 50%;
+            transform: rotate(-22deg);
+          }
+          &.navbar-menu__icon--square {
+            margin-left: 0.5px;
+            width: 1.8rem;
+            height: 1.8rem;
+            font-size: 1.8rem;
+            border: 1.6px solid rgba($color: #fff, $alpha: 0.7);
+            border-radius: 4px;
+          }
+          &.navbar-menu__icon--rectangle {
+            margin-left: 0.5px;
+            padding: 3.4px 4px 3.4px 6px;
+            width: 0.9rem;
+            height: 0.9rem;
+            font-size: 0.9rem;
+            border: 1.6px solid rgba($color: #fff, $alpha: 0.7);
+            border-radius: 6px;
+          }
+        }
+        .navbar-menu__list-icon {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-right: $margin-3;
+          .list-icon__row {
+            margin-left: 1px;
+            margin-right: 1px;
+            .list-icon__item {
+              ion-icon {
+                font-size: 1.1rem;
+                color: $color-white-0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sidebar__separate {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 22px;
+      right: 22px;
+      border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+  }
+  .sidebar__scrollbar {
+    margin-top: $margin-3;
+    .sidebar__login {
+      margin: $margin-6 $margin-6 0;
+      padding: $padding-8;
+      border-radius: 16px;
+      text-align: center;
+      background-color: $color-purple-0;
+      @include text($color-white-0, $fs-0, $fw-normal);
+      line-height: 1.5;
+      letter-spacing: 0.8;
+    }
+    .sidebar__login-btn {
+      margin-top: $margin-6;
+      min-width: 100%;
+    }
+  }
+}

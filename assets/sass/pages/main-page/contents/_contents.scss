@@ -1,0 +1,52 @@
+.content {
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+  position: relative;
+  top: 0;
+  left: 240px;
+  right: 0;
+  padding: 0 $padding-10 * 2+2;
+
+  .content-gallery {
+    position: relative;
+  }
+  .content-section {
+    margin-top: $margin-13;
+    &.playlist-section,
+    &.channel-section {
+      height: 300px;
+      .slider-wrapper {
+        height: 260px;
+      }
+      .card-header {
+        height: 210px;
+      }
+    }
+    &.shortcut-section {
+      height: 158px;
+      .slider-wrapper {
+        height: 120px;
+      }
+    }
+    &.chart-section {
+      height: 420px;
+    }
+    .section-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .section__title {
+        height: 2.6rem;
+        line-height: 2.6rem;
+        margin-bottom: $margin-4;
+        text-transform: capitalize;
+        @include text($color-white-0, $fs-3, $fw-bold);
+      }
+    }
+  }
+}
+
+@import "./gallery";
+@import "./playlist";
+@import "./chart";

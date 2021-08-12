@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  height: 70px;
+  z-index: 10;
+  flex: 1;
+
+  background-color: $bg-layout-0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 $padding-13;
+  .header__left {
+    padding-right: $padding-3;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .header__navigation {
+      display: flex;
+      align-items: center;
+      .navigation__btn {
+        flex: 1;
+        padding: 0;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        & + .navigation__btn {
+          margin-left: 0;
+        }
+        .navigation__icon {
+          width: 2.4rem;
+          height: 2.4rem;
+          font-size: 2.4rem;
+        }
+      }
+    }
+    .header__search-form {
+      flex: 1;
+      .search-form {
+        max-width: 540px;
+        .form-group--customize {
+          background-color: hsla(0, 0%, 100%, 0.1);
+          border-radius: 50px;
+          .form-control__icon {
+            color: $color-white-1;
+            width: 2.2rem;
+            height: 2.2rem;
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+  .header__right {
+    display: flex;
+    align-items: center;
+    .header__item {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      & + .header__item {
+        margin-left: $margin-3;
+      }
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        content: "";
+        border: 1px solid transparent;
+        background-color: $color-purple-3;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+
+      .header__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        .header__icon {
+          position: relative;
+          &::after {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
+
+            content: "";
+            border-bottom: 2px solid #dadada;
+            border-radius: 50px;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .theme,
+  .artist {
+    .theme-wrapper,
+    .artist-wrapper {
+      .row-gutter-2-4 {
+        margin-left: -8px;
+        margin-right: -8px;
+        .col-gutter-2-4 {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+}

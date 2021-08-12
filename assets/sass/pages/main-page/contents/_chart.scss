@@ -1,0 +1,228 @@
+.chart-section {
+  .section-wrapper {
+    padding: $padding-8;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .chart__bg-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../../../assets/images/bg-chart.jpg");
+  }
+  .chart__bg-overplay {
+    position: absolute;
+    inset: 0;
+    opacity: 0.95;
+    background: linear-gradient(180deg, #740091, #2d1a1a);
+  }
+  .chart__content {
+    position: relative;
+    .chart-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: $margin-8;
+      .chart-header__link {
+        @include text($color-white-0, $fs-7, $fw-bold);
+      }
+      .chart-header__btn {
+        position: relative;
+        margin-left: $margin-1;
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        background-color: $color-white-0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-20%, -50%);
+          border-width: 6px 10px;
+          border-style: solid;
+          border-color: transparent transparent transparent $color-purple-0;
+          border-radius: 2px;
+        }
+      }
+    }
+    .chart-body {
+      .chart-of-songs {
+        .charts {
+          .chart-song {
+            margin-bottom: $margin-3;
+            border-radius: 4px;
+            background-color: hsla(0, 0%, 100%, 0.07);
+            &:hover,
+            &.active {
+              background-color: hsla(0, 0%, 100%, 0.2);
+            }
+            .media {
+              display: flex;
+              align-items: center;
+              height: 100%;
+              padding: $padding-3 $padding-5;
+              cursor: pointer;
+              &:hover {
+                .song {
+                  .thumbnail__actions {
+                    .play-action {
+                      display: block;
+                    }
+                  }
+                }
+              }
+              .media__arrange {
+                flex: 0 0 10%;
+                max-width: 10%;
+              }
+              .media__info {
+                flex: 0 0 75%;
+                max-width: 75%;
+                height: 60px;
+                .song {
+                  height: 100%;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  .song__thumbnail {
+                    position: relative;
+                    height: 100%;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    .thumbnail__image {
+                      width: 100%;
+                      height: 100%;
+                      max-width: 60px;
+                      border-radius: 4px;
+                    }
+                    .thumbnail__actions {
+                      position: absolute;
+                      inset: 0;
+                      .play-action {
+                        display: none;
+                        position: relative;
+                        &::before {
+                          content: "";
+                          position: absolute;
+                          transform: translate(100%, 120%);
+                          border-width: 8px 12px;
+                          border-style: solid;
+                          border-color: transparent transparent transparent
+                            $color-white-0;
+                          border-radius: 2px;
+                        }
+                      }
+                    }
+                  }
+                  .song__info {
+                    margin-left: $margin-2;
+                    .info__name {
+                      line-height: 1.3;
+                      @include text($color-white-0, $fs-0, $fw-medium);
+                    }
+                    .info__singer {
+                      margin-top: $margin-0;
+                      @include text(
+                        hsla(0, 0%, 100%, 0.5),
+                        1.3rem,
+                        $fw-regular
+                      );
+                    }
+                  }
+                }
+              }
+              .media__evaluate {
+                flex: 0 0 15%;
+                max-width: 15%;
+                .number-evaluate {
+                  line-height: 1.56;
+                  @include text($color-white-0, $fs-1, $fw-bold);
+                }
+              }
+            }
+          }
+          // .media {
+          //   .media__arrange {
+          //     flex: 0 0 10%;
+          //     max-width: 10%;
+          //   }
+          //   .media__info {
+          //     flex: 0 0 75%;
+          //     max-width: 75%;
+          //     height: 60px;
+          //     .song {
+          //       height: 100%;
+          //       display: flex;
+          //       justify-content: flex-start;
+          //       align-items: center;
+          //       .song__thumbnail {
+          //         position: relative;
+          //         height: 100%;
+          //         border-radius: 4px;
+          //         overflow: hidden;
+          //         .thumbnail__image {
+          //           width: 100%;
+          //           height: 100%;
+          //           max-width: 60px;
+          //           border-radius: 4px;
+          //         }
+          //         .thumbnail__actions {
+          //           position: absolute;
+          //           inset: 0;
+          //           .play-action {
+          //             display: none;
+          //             position: relative;
+          //             &::before {
+          //               content: "";
+          //               position: absolute;
+          //               transform: translate(100%, 120%);
+          //               border-width: 8px 12px;
+          //               border-style: solid;
+          //               border-color: transparent transparent transparent
+          //                 $color-white-0;
+          //               border-radius: 2px;
+          //             }
+          //           }
+          //         }
+          //       }
+          //       .song__info {
+          //         margin-left: $margin-2;
+          //         .info__name {
+          //           line-height: 1.3;
+          //           @include text($color-white-0, $fs-0, $fw-medium);
+          //         }
+          //         .info__singer {
+          //           margin-top: $margin-0;
+          //           @include text(hsla(0, 0%, 100%, 0.5), 1.3rem, $fw-regular);
+          //         }
+          //       }
+          //     }
+          //   }
+          //   .media__evaluate {
+          //     flex: 0 0 15%;
+          //     max-width: 15%;
+          //     .number-evaluate {
+          //       line-height: 1.56;
+          //       @include text($color-white-0, $fs-1, $fw-bold);
+          //     }
+          //   }
+          // }
+        }
+        .show-more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .show-more__btn {
+            margin-top: 5px;
+            padding: $padding-2 $padding-11;
+          }
+        }
+      }
+      .chart-monitor {
+      }
+    }
+  }
+}

@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Icon page  -->
+    <link rel="shortcut icon" href="./assets/images/logo-icon.png" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar__logo">
+          <img
+            class="sidebar__img"
+            src="./assets/images/logo-dark.svg"
+            alt="logo"
+          />
+        </a>
+        <nav class="sidebar__main">
+          <ul class="navbar-menu">
+            <li class="navbar-menu__item">
+              <a title="Cá Nhân" href="" class="navbar-menu__link">
+                <!-- <ion-icon name="albums-outline" class="navbar-menu__icon">
+                  </ion-icon> -->
+                <ion-icon
+                  name="musical-note-outline"
+                  class="navbar-menu__icon navbar-menu__icon--personal"
+                ></ion-icon>
+                <span class="navbar-menu__text">Cá Nhân</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item active">
+              <a title="Cá Nhân" href="" class="navbar-menu__link">
+                <ion-icon
+                  name="disc-outline"
+                  class="navbar-menu__icon"
+                ></ion-icon>
+                <span class="navbar-menu__text">Khám Phá</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item">
+              <a title="Cá Nhân" href="" class="navbar-menu__link">
+                <ion-icon
+                  name="pulse-outline"
+                  class="navbar-menu__icon navbar-menu__icon--border"
+                ></ion-icon>
+                <span class="navbar-menu__text">#zingchart</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item">
+              <a title="Cá Nhân" href="" class="navbar-menu__link">
+                <ion-icon
+                  name="radio-outline"
+                  class="navbar-menu__icon"
+                ></ion-icon>
+                <span class="navbar-menu__text">Radio</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item">
+              <a title="Cá Nhân" href="" class="navbar-menu__link">
+                <ion-icon
+                  name="list-outline"
+                  class="navbar-menu__icon navbar-menu__icon--square"
+                ></ion-icon>
+                <span class="navbar-menu__text">Theo Dõi</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar__separate"></div>
+        <div class="sidebar__scrollbar">
+          <nav class="sidebar__main">
+            <ul class="navbar-menu">
+              <li class="navbar-menu__item">
+                <a title="Cá Nhân" href="" class="navbar-menu__link">
+                  <ion-icon
+                    name="musical-notes-outline"
+                    class="navbar-menu__icon"
+                  ></ion-icon>
+                  <span class="navbar-menu__text">Nhạc Mới</span>
+                </a>
+              </li>
+              <li class="navbar-menu__item">
+                <a title="Cá Nhân" href="" class="navbar-menu__link">
+                  <div class="navbar-menu__list-icon">
+                    <div class="row list-icon__row">
+                      <div class="col-lg-6 list-icon__item">
+                        <ion-icon name="tablet-landscape-outline"></ion-icon>
+                      </div>
+                      <div class="col-lg-6 list-icon__item">
+                        <ion-icon name="ellipse-outline"></ion-icon>
+                      </div>
+                      <div class="col-lg-6 list-icon__item">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                      <div class="col-lg-6 list-icon__item">
+                        <ion-icon name="play-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="navbar-menu__text">Thể Loại</span>
+                </a>
+              </li>
+
+              <li class="navbar-menu__item">
+                <a title="Cá Nhân" href="" class="navbar-menu__link">
+                  <ion-icon
+                    name="star-outline"
+                    class="navbar-menu__icon"
+                  ></ion-icon>
+                  <span class="navbar-menu__text">Top 100</span>
+                </a>
+              </li>
+              <li class="navbar-menu__item">
+                <a title="Cá Nhân" href="" class="navbar-menu__link">
+                  <ion-icon
+                    name="play-outline"
+                    class="navbar-menu__icon navbar-menu__icon--rectangle"
+                  ></ion-icon>
+                  <span class="navbar-menu__text">MV</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__login">
+            <p class="sidebar__login-title">
+              Đăng nhập để khám phá những playlist dành riêng cho chính bạn.
+            </p>
+            <button class="btn btn-default btn--lg sidebar__login-btn">
+              đăng nhập
+            </button>
+          </div>
+        </div>
+      </aside>
+      <!-- Header -->
+      <header class="row no-gutters header">
+        <!-- Left -->
+        <div class="col-lg-10 header__left">
+          <div class="header__navigation">
+            <button class="btn btn--disabled navigation__btn">
+              <ion-icon
+                name="arrow-back-outline"
+                class="icon navigation__icon"
+              ></ion-icon>
+            </button>
+            <button class="btn navigation__btn">
+              <ion-icon
+                name="arrow-forward-outline"
+                class="icon navigation__icon"
+              ></ion-icon>
+            </button>
+          </div>
+          <div class="header__search-form">
+            <form class="search-form">
+              <div class="form-group form-group--customize">
+                <button class="btn form-control__btn px-0 py-0">
+                  <ion-icon
+                    name="search-outline"
+                    class="icon form-control__icon"
+                  ></ion-icon>
+                </button>
+                <input
+                  type="text"
+                  placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV…"
+                  class="form-control__input"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="col-lg-2 header__right">
+          <div class="header__item">
+            <button class="btn header__btn" data-target="#modal_theme">
+              <svg width="20" height="20" viewBox="0 0 20 20">
+                <defs>
+                  <linearGradient
+                    id="j32lhg93hd"
+                    x1="62.206%"
+                    x2="18.689%"
+                    y1="70.45%"
+                    y2="39.245%"
+                  >
+                    <stop offset="0%" stop-color="#F81212"></stop>
+                    <stop offset="100%" stop-color="red"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="hjoavsus6g"
+                    x1="50%"
+                    x2="11.419%"
+                    y1="23.598%"
+                    y2="71.417%"
+                  >
+                    <stop offset="0%" stop-color="#00F"></stop>
+                    <stop offset="100%" stop-color="#0031FF"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="la1y5u3dvi"
+                    x1="65.655%"
+                    x2="25.873%"
+                    y1="18.825%"
+                    y2="56.944%"
+                  >
+                    <stop offset="0%" stop-color="#FFA600"></stop>
+                    <stop offset="100%" stop-color="orange"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="2dsmrlvdik"
+                    x1="24.964%"
+                    x2="63.407%"
+                    y1="8.849%"
+                    y2="55.625%"
+                  >
+                    <stop offset="0%" stop-color="#13EFEC"></stop>
+                    <stop offset="100%" stop-color="#00E8DF"></stop>
+                  </linearGradient>
+                  <filter
+                    id="4a7imk8mze"
+                    width="230%"
+                    height="230%"
+                    x="-65%"
+                    y="-65%"
+                    filterUnits="objectBoundingBox"
+                  >
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="3.9"
+                    ></feGaussianBlur>
+                  </filter>
+                  <filter
+                    id="301mo6jeah"
+                    width="312.7%"
+                    height="312.7%"
+                    x="-106.4%"
+                    y="-106.4%"
+                    filterUnits="objectBoundingBox"
+                  >
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="3.9"
+                    ></feGaussianBlur>
+                  </filter>
+                  <filter
+                    id="b2zvzgq7fj"
+                    width="295%"
+                    height="295%"
+                    x="-97.5%"
+                    y="-97.5%"
+                    filterUnits="objectBoundingBox"
+                  >
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="3.9"
+                    ></feGaussianBlur>
+                  </filter>
+                  <filter
+                    id="a1wq161tvl"
+                    width="256%"
+                    height="256%"
+                    x="-78%"
+                    y="-78%"
+                    filterUnits="objectBoundingBox"
+                  >
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="3.9"
+                    ></feGaussianBlur>
+                  </filter>
+                  <path
+                    id="qtpqrj1oda"
+                    d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"
+                  ></path>
+                  <path id="jggzvnjgfc" d="M0 0H20V20H0z"></path>
+                  <path
+                    id="2eiwxjmc7m"
+                    d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"
+                  ></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd" transform="translate(2 3)">
+                  <mask id="tinejqaasb" fill="#fff">
+                    <use xlink:href="#qtpqrj1oda"></use>
+                  </mask>
+                  <use
+                    fill="#FFF"
+                    fill-opacity="0"
+                    xlink:href="#qtpqrj1oda"
+                  ></use>
+                  <g mask="url(#tinejqaasb)">
+                    <g transform="translate(-2 -3)">
+                      <mask id="uf3ckvfvpf" fill="#fff">
+                        <use xlink:href="#jggzvnjgfc"></use>
+                      </mask>
+                      <use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use>
+                      <circle
+                        cx="8.9"
+                        cy="6.8"
+                        r="9"
+                        fill="url(#j32lhg93hd)"
+                        filter="url(#4a7imk8mze)"
+                        mask="url(#uf3ckvfvpf)"
+                      ></circle>
+                      <circle
+                        cx="9.3"
+                        cy="13.7"
+                        r="5.5"
+                        fill="url(#hjoavsus6g)"
+                        filter="url(#301mo6jeah)"
+                        mask="url(#uf3ckvfvpf)"
+                      ></circle>
+                      <circle
+                        cx="15.9"
+                        cy="6.9"
+                        r="6"
+                        fill="url(#la1y5u3dvi)"
+                        filter="url(#b2zvzgq7fj)"
+                        mask="url(#uf3ckvfvpf)"
+                      ></circle>
+                      <circle
+                        cx="16.4"
+                        cy="17.7"
+                        r="7.5"
+                        fill="url(#2dsmrlvdik)"
+                        filter="url(#a1wq161tvl)"
+                        mask="url(#uf3ckvfvpf)"
+                      ></circle>
+                    </g>
+                  </g>
+                  <use
+                    fill="#FFF"
+                    fill-opacity="0.05"
+                    xlink:href="#2eiwxjmc7m"
+                  ></use>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="header__item">
+            <button class="btn header__btn" data-target="#modal_theme">
+              <ion-icon
+                name="arrow-up-outline"
+                class="icon header__icon"
+              ></ion-icon>
+            </button>
+          </div>
+          <div class="header__item">
+            <button class="btn header__btn" data-target="#modal_setting">
+              <ion-icon name="settings-outline" class="icon"></ion-icon>
+            </button>
+          </div>
+          <div class="header__item">
+            <button
+              class="btn header__btn header__btn--person"
+              data-target="#modal_setting"
+            >
+              <ion-icon name="person-outline" class="icon"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- Main page -->
+      <section class="main-page">
+        <!-- Content -->
+        <div class="content">
+          <!-- Gallery -->
+          <div class="content-gallery">Gallery</div>
+          <!-- Playlist -->
+          <div class="content-section playlist-section">
+            <div class="section-wrapper">
+              <h3 class="section__title">Có Thể Bạn Muốn Nghe</h3>
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <div class="row row--slider">
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_1.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_3.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_4.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_2.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_1.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_2.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_3.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_4.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_1.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_3.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_4.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_2.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_1.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_2.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_3.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_4.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href=""
+                                >Top 100 Nhạc Electronic/Dance Âu Mỹ...
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="slider-action">
+                  <button
+                    class="btn btn--disabled btn-slider-control btn-slider-prev"
+                  >
+                    <ion-icon
+                      name="chevron-back-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                  <button class="btn btn-slider-control btn-slider-next">
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Shortcut -->
+          <div class="content-section shortcut-section">
+            <div class="section-wrapper">
+              <div class="section__title">Tâm Trạng Và Hoạt Động</div>
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <div class="row row--slider">
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card card-shortcut">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/shortcut_1.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <div class="text-action">
+                                    <h4>tập trung</h4>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="slider-action">
+                  <button
+                    class="btn btn--disabled btn-slider-control btn-slider-prev"
+                  >
+                    <ion-icon
+                      name="chevron-back-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                  <button class="btn btn-slider-control btn-slider-next">
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- International music -->
+          <div class="content-section playlist-section">
+            <div class="section-wrapper">
+              <h3 class="section__title">Có Thể Bạn Muốn Nghe</h3>
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <div class="row row--slider">
+                    <div class="col col-lg-2-4 slider-item">
+                      <div class="card">
+                        <div class="card__wrapper">
+                          <div class="card-header">
+                            <a href="index.html" class="card__link">
+                              <img
+                                src="./assets/images/playlist_1.jpg"
+                                alt="alt"
+                                class="card__img"
+                              />
+                              <div class="card__overplay"></div>
+                              <div class="card__actions">
+                                <div class="box-actions">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn--action btn--action-play"
+                                  >
+                                    <ion-icon
+                                      name="play-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="card-content">
+                            <div class="card__title">
+                              <a href="">Chỉ Có Thể Là Alan Walker </a>
+                            </div>
+                            <div class="card__subtitle">
+                              <a href="">Alan Walker </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="slider-action">
+                  <button
+                    class="btn btn--disabled btn-slider-control btn-slider-prev"
+                  >
+                    <ion-icon
+                      name="chevron-back-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                  <button class="btn btn-slider-control btn-slider-next">
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Channel -->
+          <div class="content-section channel-section">
+            <div class="section-wrapper">
+              <div class="section__title">Tâm Trạng Và Hoạt Động</div>
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <div class="row row--slider">
+                    <div class="col col-lg-4 slider-item">
+                      <div class="card card-channel">
+                        <div class="card__wrapper">
+                          <div class="card-image">
+                            <div class="card-header">
+                              <a href="index.html" class="card__link">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="card__img"
+                                />
+                              </a>
+                            </div>
+                            <div class="card-content">
+                              <div class="content-event">
+                                <span class="tag">SỰ KIỆN</span>
+                                <h3 class="title">Sinh Nhật Sao x Huỳnh Tú</h3>
+                                <h3 class="subtitle">
+                                  00:00 Thứ Hai, 09 tháng 8
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="overplay"></div>
+                          </div>
+                          <div class="card-footer">
+                            <div class="event-left">
+                              <h3 class="title">Lượt chúc mừng</h3>
+                              <div class="avatars">
+                                <div class="avatars-item">
+                                  <div class="avatars-item__wrapper">
+                                    <img
+                                      src="./assets/images/avatar_1.jpg"
+                                      alt="alt"
+                                      class="avatars__image"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="avatars-item">
+                                  <div class="avatars-item__wrapper">
+                                    <img
+                                      src="./assets/images/avatar_1.jpg"
+                                      alt="alt"
+                                      class="avatars__image"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="avatars-item">
+                                  <div class="avatars-item__wrapper">
+                                    <img
+                                      src="./assets/images/avatar_1.jpg"
+                                      alt="alt"
+                                      class="avatars__image"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="avatars-amount">+1K</div>
+                              </div>
+                            </div>
+                            <div class="event-right">
+                              <button class="btn btn-purple" type="button">
+                                Chúc mừng
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-4 slider-item">
+                      <div class="card card-channel">
+                        <div class="card__wrapper">
+                          <div class="card-image">
+                            <div class="card-header">
+                              <a href="index.html" class="card__link">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="card__img"
+                                />
+                              </a>
+                            </div>
+                            <div class="card-content">
+                              <div class="content-event">
+                                <span class="tag">SỰ KIỆN</span>
+                                <h3 class="title">Sinh Nhật Sao x Huỳnh Tú</h3>
+                                <h3 class="subtitle">
+                                  00:00 Thứ Hai, 09 tháng 8
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="overplay"></div>
+                          </div>
+                          <div class="card-footer">
+                            <div class="event-left">
+                              <h3 class="title">Lượt chúc mừng</h3>
+                              <div class="avatars">
+                                <div class="avatars-item">
+                                  <div class="avatars-item__wrapper">
+                                    <img
+                                      src="./assets/images/avatar_1.jpg"
+                                      alt="alt"
+                                      class="avatars__image"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="avatars-item">
+                                  <div class="avatars-item__wrapper">
+                                    <img
+                                      src="./assets/images/avatar_1.jpg"
+                                      alt="alt"
+                                      class="avatars__image"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="avatars-item">
+                                  <div class="avatars-item__wrapper">
+                                    <img
+                                      src="./assets/images/avatar_1.jpg"
+                                      alt="alt"
+                                      class="avatars__image"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="avatars-amount">+1K</div>
+                              </div>
+                            </div>
+                            <div class="event-right">
+                              <button class="btn btn-purple" type="button">
+                                quan tâm
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="slider-action">
+                  <button
+                    class="btn btn--disabled btn-slider-control btn-slider-prev"
+                  >
+                    <ion-icon
+                      name="chevron-back-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                  <button class="btn btn-slider-control btn-slider-next">
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chart -->
+          <div class="content-section chart-section">
+            <div class="section-wrapper">
+              <div class="chart__bg-image"></div>
+              <div class="chart__bg-overplay"></div>
+              <div class="chart__content">
+                <div class="chart-header">
+                  <a href="" class="chart-header__link">#zingchart</a>
+                  <button class="btn chart-header__btn"></button>
+                </div>
+                <div class="row chart-body">
+                  <div class="col col-lg-4">
+                    <div class="chart-of-songs">
+                      <div class="charts">
+                        <div class="chart-song active">
+                          <div class="media">
+                            <div class="media__arrange">
+                              <span class="number-rating top-1-rating">1</span>
+                            </div>
+                            <div class="media__info">
+                              <div class="song">
+                                <div class="song__thumbnail">
+                                  <img
+                                    src="./assets/images/playlist_1.jpg"
+                                    alt="alt"
+                                    class="thumbnail__image"
+                                  />
+                                  <div class="thumbnail__actions">
+                                    <div class="play-action"></div>
+                                  </div>
+                                </div>
+                                <div class="song__info">
+                                  <h4 class="info__name">Rồi Tới Luôn</h4>
+                                  <a href="#" class="info__singer">Nal</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="media__evaluate">
+                              <span class="number-evaluate">100%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="chart-song">
+                          <div class="media">
+                            <div class="media__arrange">
+                              <span class="number-rating top-2-rating">2</span>
+                            </div>
+                            <div class="media__info">
+                              <div class="song">
+                                <div class="song__thumbnail">
+                                  <img
+                                    src="./assets/images/playlist_1.jpg"
+                                    alt="alt"
+                                    class="thumbnail__image"
+                                  />
+                                  <div class="thumbnail__actions">
+                                    <div class="play-action"></div>
+                                  </div>
+                                </div>
+                                <div class="song__info">
+                                  <h4 class="info__name">Rồi Tới Luôn</h4>
+                                  <a href="#" class="info__singer">Nal</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="media__evaluate">
+                              <span class="number-evaluate">100%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="chart-song">
+                          <div class="media">
+                            <div class="media__arrange">
+                              <span class="number-rating top-3-rating">3</span>
+                            </div>
+                            <div class="media__info">
+                              <div class="song">
+                                <div class="song__thumbnail">
+                                  <img
+                                    src="./assets/images/playlist_1.jpg"
+                                    alt="alt"
+                                    class="thumbnail__image"
+                                  />
+                                  <div class="thumbnail__actions">
+                                    <div class="play-action"></div>
+                                  </div>
+                                </div>
+                                <div class="song__info">
+                                  <h4 class="info__name">Rồi Tới Luôn</h4>
+                                  <a href="#" class="info__singer">Nal</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="media__evaluate">
+                              <span class="number-evaluate">100%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="show-more">
+                        <a href="" class="btn btn-default show-more__btn"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-lg-8">
+                    <div class="chart-monitor">
+                      <div class="chart-tooltip">
+                        <div class="chart-song">
+                          <div class="media">
+                            <div class="media__info">
+                              <div class="song">
+                                <div class="song__thumbnail">
+                                  <img
+                                    src="./assets/images/playlist_1.jpg"
+                                    alt="alt"
+                                    class="thumbnail__image"
+                                  />
+                                  <div class="thumbnail__actions">
+                                    <div class="play-action"></div>
+                                  </div>
+                                </div>
+                                <div class="song__info">
+                                  <h4 class="info__name">Rồi Tới Luôn</h4>
+                                  <a href="#" class="info__singer">Nal</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="media__evaluate">
+                              <span class="number-evaluate">100%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Playing bar -->
+      <section class="playing-bar">Playing bar</section>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal_theme" class="modal">
+      <div class="modal-overplay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 class="modal-title__text">Giao diện</h3>
+          </div>
+          <div class="modal-close">
+            <ion-icon name="close-outline" class="icon icon--close"></ion-icon>
+          </div>
+        </div>
+        <div class="modal-body">
+          <!-- Theme -->
+          <div class="theme">
+            <h4 class="modal-body__title">Chủ đề</h4>
+            <div class="theme-wrapper">
+              <div class="row row-gutter-2-4">
+                <div class="col col-lg-2-4 col-gutter-2-4">
+                  <div class="card card-theme">
+                    <div class="card__content">
+                      <div class="card__image">
+                        <img
+                          src="./assets/images/theme.jpg"
+                          alt="theme"
+                          class="card__img"
+                        />
+                      </div>
+                      <div class="card__overplay"></div>
+                      <div class="card__actions">
+                        <button
+                          class="btn btn-default btn--lg action__btn active"
+                        >
+                          Áp dụng</button
+                        ><button class="btn btn-default btn--lg action__btn">
+                          Xem trước
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <h4>Zing Music Awards</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-2-4 col-gutter-2-4">
+                  <div class="card card-theme">
+                    <div class="card__content">
+                      <div class="card__image">
+                        <img
+                          src="./assets/images/theme.jpg"
+                          alt="theme"
+                          class="card__img"
+                        />
+                      </div>
+                      <div class="card__overplay"></div>
+                      <div class="card__actions">
+                        <button
+                          class="btn btn-default btn--lg action__btn action"
+                        >
+                          Áp dụng</button
+                        ><button class="btn btn-default btn--lg action__btn">
+                          Xem trước
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <h4>Zing Music Awards</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-2-4 col-gutter-2-4">
+                  <div class="card card-theme">
+                    <div class="card__content">
+                      <div class="card__image">
+                        <img
+                          src="./assets/images/theme.jpg"
+                          alt="theme"
+                          class="card__img"
+                        />
+                      </div>
+                      <div class="card__overplay"></div>
+                      <div class="card__actions">
+                        <button
+                          class="btn btn-default btn--lg action__btn action"
+                        >
+                          Áp dụng</button
+                        ><button class="btn btn-default btn--lg action__btn">
+                          Xem trước
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <h4>Zing Music Awards</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Artist -->
+          <div class="artist">
+            <h4 class="modal-body__title">Nghệ sĩ</h4>
+            <div class="artist-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Javascript -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

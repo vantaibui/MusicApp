@@ -1,0 +1,43 @@
+.btn {
+  display: inline-block;
+
+  font-size: $fs-0;
+  font-weight: $fw-normal;
+  color: $color-white-0;
+  padding: $padding-3 $padding-8;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50px;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: filter 0.2s linear;
+  &:hover {
+    filter: brightness(0.9);
+  }
+  & + .btn {
+    margin-left: 1.6rem;
+  }
+  &.btn-default {
+    border-color: $color-white-0;
+  }
+  &.btn-purple {
+    border-color: #7e17a8;
+    background-color: #7e17a8;
+  }
+  &.active {
+    border-color: #7e17a8;
+    background-color: #7e17a8;
+  }
+}
+.btn--disabled {
+  opacity: 0.3;
+  cursor: default;
+  user-select: none;
+}
+.btn--lg {
+  padding: $padding-3 $padding-10;
+}

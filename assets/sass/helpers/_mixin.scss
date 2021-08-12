@@ -1,0 +1,55 @@
+// Text
+@mixin text($color, $fs, $fw) {
+  color: $color;
+  font: {
+    size: $fs;
+    weight: $fw;
+  }
+}
+
+// Icon
+@mixin icon($color, $fs) {
+  color: $color;
+  font-size: $fs;
+}
+
+// Button
+@mixin button(
+  $fs,
+  $fw,
+  $color,
+  $color-hover,
+  $color-border,
+  $color-border-hover,
+  $background-color,
+  $background-color-hover,
+  $border-radius,
+  $pd-top-bottom,
+  $pd-left-right
+) {
+  font: {
+    size: $fs;
+    weight: $fw;
+  }
+  color: $color;
+  background-color: $background-color;
+}
+
+@mixin spanTag(
+  $color,
+  $fs,
+  $fw,
+  $text-transform,
+  $padding-t-b,
+  $padding-l-r,
+  $border-radius,
+  $bg-color
+) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+  text-transform: $text-transform;
+  padding: $padding-t-b $padding-l-r;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+}
