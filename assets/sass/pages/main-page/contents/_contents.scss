@@ -1,11 +1,7 @@
-.content {
+.main-content {
   width: 100%;
   height: 100%;
   margin-top: 70px;
-  position: relative;
-  top: 0;
-  left: 240px;
-  right: 0;
   padding: 0 $padding-10 * 2+2;
 
   .content-gallery {
@@ -16,11 +12,9 @@
     &.playlist-section,
     &.channel-section {
       height: 300px;
-      .slider-wrapper {
+      .slider-wrapper,
+      .channel-wrapper {
         height: 260px;
-      }
-      .card-header {
-        height: 210px;
       }
     }
     &.shortcut-section {
@@ -32,6 +26,7 @@
     &.chart-section {
       height: 420px;
     }
+
     .section-wrapper {
       position: relative;
       width: 100%;
@@ -45,8 +40,33 @@
       }
     }
   }
+
+  // New
+  .zm-section {
+    margin-top: $margin-13;
+
+    // Mix zing
+    &.zm-mix-section {
+      margin-top: $margin-13;
+    }
+    // New release
+    // &.zm-new-release-section {
+    //   height: 160px;
+    // }
+    // Title
+    .zm-section-title {
+      margin-bottom: $margin-3;
+      text-transform: capitalize;
+      @include text($color-white-0, $fs-3, $fw-bold);
+    }
+  }
 }
 
 @import "./gallery";
-@import "./playlist";
+@import "./slider";
 @import "./chart";
+@import "./zing_chart";
+@import "./new-release";
+@import "./karaoke";
+@import "./footer";
+@import "./mix-zing";

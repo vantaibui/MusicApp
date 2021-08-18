@@ -1,0 +1,47 @@
+.footer {
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .footer__title {
+    margin-bottom: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.71px;
+    @include text($color-gray-0, 1.2rem, $fw-bold);
+    cursor: pointer;
+    transition: all 0.4s linear;
+    &:hover {
+      color: $color-purple-1;
+    }
+  }
+  .footer__partner {
+    .partner-item {
+      flex: 0 0 12.5%;
+      max-width: 12.5%;
+      padding-left: 10px;
+      padding-right: 10px;
+      .partner {
+        border-radius: 8px;
+        overflow: hidden;
+        .content {
+          position: relative;
+          padding-bottom: 62.5%;
+          .partner-image {
+            position: absolute;
+            inset: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            .partner__img {
+              max-width: 90%;
+              max-height: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

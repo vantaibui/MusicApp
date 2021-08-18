@@ -118,13 +118,18 @@
                     }
                   }
                   .song__info {
-                    margin-left: $margin-2;
+                    margin-left: $margin-3;
                     .info__name {
                       line-height: 1.3;
                       @include text($color-white-0, $fs-0, $fw-medium);
                     }
                     .info__singer {
+                      &:hover {
+                        text-decoration: underline;
+                        color: $color-purple-1;
+                      }
                       margin-top: $margin-0;
+                      transition: all 0.8s;
                       @include text(
                         hsla(0, 0%, 100%, 0.5),
                         1.3rem,
@@ -144,72 +149,42 @@
               }
             }
           }
-          // .media {
-          //   .media__arrange {
-          //     flex: 0 0 10%;
-          //     max-width: 10%;
-          //   }
-          //   .media__info {
-          //     flex: 0 0 75%;
-          //     max-width: 75%;
-          //     height: 60px;
-          //     .song {
-          //       height: 100%;
-          //       display: flex;
-          //       justify-content: flex-start;
-          //       align-items: center;
-          //       .song__thumbnail {
-          //         position: relative;
-          //         height: 100%;
-          //         border-radius: 4px;
-          //         overflow: hidden;
-          //         .thumbnail__image {
-          //           width: 100%;
-          //           height: 100%;
-          //           max-width: 60px;
-          //           border-radius: 4px;
-          //         }
-          //         .thumbnail__actions {
-          //           position: absolute;
-          //           inset: 0;
-          //           .play-action {
-          //             display: none;
-          //             position: relative;
-          //             &::before {
-          //               content: "";
-          //               position: absolute;
-          //               transform: translate(100%, 120%);
-          //               border-width: 8px 12px;
-          //               border-style: solid;
-          //               border-color: transparent transparent transparent
-          //                 $color-white-0;
-          //               border-radius: 2px;
-          //             }
-          //           }
-          //         }
-          //       }
-          //       .song__info {
-          //         margin-left: $margin-2;
-          //         .info__name {
-          //           line-height: 1.3;
-          //           @include text($color-white-0, $fs-0, $fw-medium);
-          //         }
-          //         .info__singer {
-          //           margin-top: $margin-0;
-          //           @include text(hsla(0, 0%, 100%, 0.5), 1.3rem, $fw-regular);
-          //         }
-          //       }
-          //     }
-          //   }
-          //   .media__evaluate {
-          //     flex: 0 0 15%;
-          //     max-width: 15%;
-          //     .number-evaluate {
-          //       line-height: 1.56;
-          //       @include text($color-white-0, $fs-1, $fw-bold);
-          //     }
-          //   }
-          // }
+          .chart-song-item {
+            margin-bottom: $margin-3;
+            border-radius: 4px;
+            background-color: hsla(0, 0%, 100%, 0.07);
+            &:hover,
+            &.active {
+              background-color: hsla(0, 0%, 100%, 0.2);
+            }
+            .zm-media {
+              padding: $padding-3 $padding-6;
+              cursor: default;
+              .zm-media__left {
+                flex: 0 0 85%;
+                max-width: 85%;
+                @include flex-box(flex-start, center);
+
+                .song-thumbnail {
+                  cursor: pointer;
+                }
+                .song-info {
+                  .box-text__title {
+                    font-size: $fs-0;
+                    font-weight: $fw-medium;
+                  }
+                  .box-text__subtitle {
+                    font: size 1.2em;
+                    font-weight: $fw-regular;
+                  }
+                }
+              }
+              .zm-media__rigth {
+                flex: 0 0 15%;
+                max-width: 15%;
+              }
+            }
+          }
         }
         .show-more {
           display: flex;

@@ -1,0 +1,210 @@
+.zm-media {
+  width: 100%;
+  padding: $padding-3;
+  @include flex-box(flex-start, center);
+  cursor: pointer;
+
+  &:hover {
+    .zm-card__image {
+      .card-img {
+        transform: scale(1.1) translateZ(10px);
+      }
+      .card-opacity,
+      .card-actions {
+        display: block;
+      }
+    }
+    .zm-media__left {
+      .song-thumbnail {
+        .song-opacity,
+        .song-actions {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .zm-media__left {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin-right: $margin-3;
+    @include flex-box(flex-start, flex-start);
+
+    .song-prefix {
+      margin-right: $margin-3;
+    }
+    .song-thumbnail {
+      position: relative;
+      margin-right: $margin-3;
+      border-radius: 4px;
+      overflow: hidden;
+      .song-image {
+        margin: 0;
+        &.is-40x40 {
+          width: 40px;
+          height: 40px;
+        }
+        &.is-60x60 {
+          width: 60px;
+          height: 60px;
+          .song-actions {
+            top: 30%;
+            left: 40%;
+          }
+        }
+        .song-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+      .song-opacity {
+        position: absolute;
+        inset: 0;
+        background-color: rgba($color: #000, $alpha: 0.5);
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeOpacity linear 2s;
+      }
+      .song-actions {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeOpacity linear 2s;
+        .btn--action {
+          position: relative;
+          padding: 0;
+          &::before {
+            position: absolute;
+            inset: 0;
+            content: "";
+            border-radius: 2px;
+            border-width: 8px 14px;
+            border-style: solid;
+            border-color: transparent transparent transparent $color-white-0;
+          }
+        }
+      }
+    }
+    .song-info {
+      .box-text {
+        .box-text__title {
+          line-height: 1.38;
+          @include text($color-white-0, $fs-1, $fw-bold);
+        }
+        .box-text__subtitle {
+          .subtitle__link {
+            &:hover {
+              text-decoration: underline;
+              color: $color-purple-1;
+            }
+            margin-top: $margin-0;
+            line-height: 1.38;
+            @include text($color-gray-2, 1.2rem, $fw-medium);
+          }
+        }
+      }
+    }
+  }
+  .zm-media__right {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    position: relative;
+    height: 100%;
+
+    flex-direction: column;
+    @include flex-box(space-between, flex-start);
+    .box-text {
+      .box-text__title {
+        line-height: 1.38;
+        @include text($color-white-0, $fs-1, $fw-bold);
+      }
+      .box-text__subtitle {
+        margin-top: $margin-0;
+        line-height: 1.38;
+        @include text($color-gray-2, 1.2rem, $fw-medium);
+      }
+      .box-text__evaluate {
+        line-height: 1.56;
+        @include text($color-white-0, $fs-1, $fw-bold);
+      }
+    }
+    .box-text-release {
+      width: 100%;
+      @include flex-box(space-between, flex-end);
+      .text-order {
+        -webkit-text-stroke: 1px $color-white-0;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+        opacity: 0.4;
+        font-family: "Roboto", sans-serif;
+        @include text(transparent, 4rem, 900);
+      }
+      .text-release-date {
+        line-height: 1.8;
+        @include text(rgba($color-gray-2, 0.8), $fs-0, $fw-semi_bold);
+      }
+    }
+    .box-actions {
+      @include flex-box(center, center);
+      visibility: hidden;
+      opacity: 0;
+      transition: all ease 0.3s;
+      .box-item {
+        position: relative;
+        flex-grow: 1;
+        &::before {
+          position: absolute;
+          inset: 0;
+          content: "";
+          border-radius: 50%;
+          background-color: #423a4b;
+          border: 2px solid #423a4b;
+
+          transition: all ease 0.6s;
+          visibility: hidden;
+          opacity: 0;
+        }
+        &:hover::before {
+          visibility: visible;
+          opacity: 1;
+        }
+        .btn--actions {
+          padding: 3px;
+          margin: 0 2px;
+          .icon {
+            width: 16px;
+            height: 16px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeOpacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}

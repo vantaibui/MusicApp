@@ -12,5 +12,10 @@
   .main-page {
     flex-basis: calc(100% - 240px);
     max-width: calc(100% - 240px);
+
+    position: relative;
+    top: 0;
+    left: 240px;
+    right: 0;
   }
 }

@@ -1,0 +1,66 @@
+.slider-wrapper {
+  overflow: hidden;
+  .slider {
+    position: relative;
+    height: 100%;
+    // transform: translate3d(-240.7px, 0px, 50px);
+    transform: translateX(0);
+    transition-property: transform;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  .slider-action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    .btn-slider-control {
+      width: 2.6rem;
+      height: 2.6rem;
+      font-size: 2.6rem;
+      .icon--control {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+// Zm slider
+.zm-slider-wrapper {
+  position: relative;
+  .zm-slider {
+    overflow: hidden;
+    .row-slider {
+      flex-wrap: nowrap;
+    }
+    &.zm-slider-new-release {
+      height: 160px;
+      padding-top: $padding-1;
+      padding-bottom: $padding-1;
+    }
+  }
+  .zm-slider-actions {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    .btn-slider-control {
+      padding: 0;
+      width: 2.6rem;
+      height: 2.6rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      & + .btn-slider-control {
+        margin-left: 20px;
+      }
+
+      .icon--control {
+        width: 2.3rem;
+        height: 2.3rem;
+      }
+    }
+  }
+}

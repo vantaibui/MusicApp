@@ -64,23 +64,6 @@
       & + .header__item {
         margin-left: $margin-3;
       }
-      &::after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        content: "";
-        border: 1px solid transparent;
-        background-color: $color-purple-3;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-      }
 
       .header__btn {
         position: absolute;
@@ -89,6 +72,24 @@
         transform: translate(-50%, -50%);
         padding: 0;
         margin: 0;
+        &::after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          content: "";
+          border: 1px solid transparent;
+          background-color: $color-purple-3;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+        }
+
         .header__icon {
           position: relative;
           &::after {

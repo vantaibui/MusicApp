@@ -1,0 +1,39 @@
+.zm-karaoke-item {
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  &:hover {
+    box-shadow: 0 2px 10px 0 rgba(66, 66, 66, 0.4);
+    background-color: hsla(0, 0%, 100%, 0.1);
+
+    .box-actions {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .zm-media {
+    cursor: auto;
+
+    .zm-media__left {
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      .song-info {
+        .box-text__title {
+          // margin-top: -8px;
+          font-size: $fs-0;
+          font-weight: $fw-medium;
+          cursor: pointer;
+        }
+        .box-text__subtitle {
+          font: size 1.2em;
+          font-weight: $fw-regular;
+          cursor: pointer;
+        }
+      }
+    }
+    .zm-media__right {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+}
