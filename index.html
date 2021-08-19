@@ -21,15 +21,16 @@
   <body>
     <div class="layout">
       <!-- Sidebar -->
-      <aside class="sidebar">
-        <a href="index.html" class="sidebar__logo">
-          <img
+      <aside class="zm-sidebar">
+        <a href="index.html" class="zm-sidebar__logo">
+          <!-- <img
             class="sidebar__img"
             src="./assets/images/logo-dark.svg"
             alt="logo"
-          />
+          /> -->
+          <div class="zm-logo"></div>
         </a>
-        <nav class="sidebar__main">
+        <nav class="zm-sidebar__main">
           <ul class="navbar-menu">
             <li class="navbar-menu__item">
               <a title="Cá Nhân" href="" class="navbar-menu__link">
@@ -82,7 +83,7 @@
         </nav>
         <div class="sidebar__separate"></div>
         <div class="sidebar__scrollbar">
-          <nav class="sidebar__main">
+          <nav class="zm-sidebar__main">
             <ul class="navbar-menu">
               <li class="navbar-menu__item">
                 <a title="Cá Nhân" href="" class="navbar-menu__link">
@@ -146,242 +147,309 @@
         </div>
       </aside>
       <!-- Header -->
-      <header class="row no-gutters header">
-        <!-- Left -->
-        <div class="col-lg-10 header__left">
-          <div class="header__navigation">
-            <button class="btn btn--disabled navigation__btn">
-              <ion-icon
-                name="arrow-back-outline"
-                class="icon navigation__icon"
-              ></ion-icon>
-            </button>
-            <button class="btn navigation__btn">
-              <ion-icon
-                name="arrow-forward-outline"
-                class="icon navigation__icon"
-              ></ion-icon>
-            </button>
+      <header class="zm-header">
+        <div class="row no-gutters zm-row-header">
+          <!-- Left -->
+          <div class="col col-lg-10 zm-header__left">
+            <div class="header__navigation">
+              <button class="btn btn--disabled navigation__btn">
+                <ion-icon
+                  name="arrow-back-outline"
+                  class="icon navigation__icon"
+                ></ion-icon>
+              </button>
+              <button class="btn navigation__btn">
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="icon navigation__icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="header__search-form">
+              <form class="search-form">
+                <div class="form-group form-group--customize">
+                  <button class="btn form-control__btn">
+                    <ion-icon
+                      name="search-outline"
+                      class="icon form-control__icon"
+                    ></ion-icon>
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV…"
+                    class="form-control__input"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="header__search-form">
-            <form class="search-form">
-              <div class="form-group form-group--customize">
-                <button class="btn form-control__btn px-0 py-0">
-                  <ion-icon
-                    name="search-outline"
-                    class="icon form-control__icon"
-                  ></ion-icon>
-                </button>
-                <input
-                  type="text"
-                  placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV…"
-                  class="form-control__input"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- Right -->
-        <div class="col-lg-2 header__right">
-          <div class="header__item">
-            <button class="btn header__btn" data-target="#modal_theme">
-              <svg width="20" height="20" viewBox="0 0 20 20">
-                <defs>
-                  <linearGradient
-                    id="j32lhg93hd"
-                    x1="62.206%"
-                    x2="18.689%"
-                    y1="70.45%"
-                    y2="39.245%"
-                  >
-                    <stop offset="0%" stop-color="#F81212"></stop>
-                    <stop offset="100%" stop-color="red"></stop>
-                  </linearGradient>
-                  <linearGradient
-                    id="hjoavsus6g"
-                    x1="50%"
-                    x2="11.419%"
-                    y1="23.598%"
-                    y2="71.417%"
-                  >
-                    <stop offset="0%" stop-color="#00F"></stop>
-                    <stop offset="100%" stop-color="#0031FF"></stop>
-                  </linearGradient>
-                  <linearGradient
-                    id="la1y5u3dvi"
-                    x1="65.655%"
-                    x2="25.873%"
-                    y1="18.825%"
-                    y2="56.944%"
-                  >
-                    <stop offset="0%" stop-color="#FFA600"></stop>
-                    <stop offset="100%" stop-color="orange"></stop>
-                  </linearGradient>
-                  <linearGradient
-                    id="2dsmrlvdik"
-                    x1="24.964%"
-                    x2="63.407%"
-                    y1="8.849%"
-                    y2="55.625%"
-                  >
-                    <stop offset="0%" stop-color="#13EFEC"></stop>
-                    <stop offset="100%" stop-color="#00E8DF"></stop>
-                  </linearGradient>
-                  <filter
-                    id="4a7imk8mze"
-                    width="230%"
-                    height="230%"
-                    x="-65%"
-                    y="-65%"
-                    filterUnits="objectBoundingBox"
-                  >
-                    <feGaussianBlur
-                      in="SourceGraphic"
-                      stdDeviation="3.9"
-                    ></feGaussianBlur>
-                  </filter>
-                  <filter
-                    id="301mo6jeah"
-                    width="312.7%"
-                    height="312.7%"
-                    x="-106.4%"
-                    y="-106.4%"
-                    filterUnits="objectBoundingBox"
-                  >
-                    <feGaussianBlur
-                      in="SourceGraphic"
-                      stdDeviation="3.9"
-                    ></feGaussianBlur>
-                  </filter>
-                  <filter
-                    id="b2zvzgq7fj"
-                    width="295%"
-                    height="295%"
-                    x="-97.5%"
-                    y="-97.5%"
-                    filterUnits="objectBoundingBox"
-                  >
-                    <feGaussianBlur
-                      in="SourceGraphic"
-                      stdDeviation="3.9"
-                    ></feGaussianBlur>
-                  </filter>
-                  <filter
-                    id="a1wq161tvl"
-                    width="256%"
-                    height="256%"
-                    x="-78%"
-                    y="-78%"
-                    filterUnits="objectBoundingBox"
-                  >
-                    <feGaussianBlur
-                      in="SourceGraphic"
-                      stdDeviation="3.9"
-                    ></feGaussianBlur>
-                  </filter>
-                  <path
-                    id="qtpqrj1oda"
-                    d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"
-                  ></path>
-                  <path id="jggzvnjgfc" d="M0 0H20V20H0z"></path>
-                  <path
-                    id="2eiwxjmc7m"
-                    d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"
-                  ></path>
-                </defs>
-                <g fill="none" fill-rule="evenodd" transform="translate(2 3)">
-                  <mask id="tinejqaasb" fill="#fff">
-                    <use xlink:href="#qtpqrj1oda"></use>
-                  </mask>
-                  <use
-                    fill="#FFF"
-                    fill-opacity="0"
-                    xlink:href="#qtpqrj1oda"
-                  ></use>
-                  <g mask="url(#tinejqaasb)">
-                    <g transform="translate(-2 -3)">
-                      <mask id="uf3ckvfvpf" fill="#fff">
-                        <use xlink:href="#jggzvnjgfc"></use>
-                      </mask>
-                      <use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use>
-                      <circle
-                        cx="8.9"
-                        cy="6.8"
-                        r="9"
-                        fill="url(#j32lhg93hd)"
-                        filter="url(#4a7imk8mze)"
-                        mask="url(#uf3ckvfvpf)"
-                      ></circle>
-                      <circle
-                        cx="9.3"
-                        cy="13.7"
-                        r="5.5"
-                        fill="url(#hjoavsus6g)"
-                        filter="url(#301mo6jeah)"
-                        mask="url(#uf3ckvfvpf)"
-                      ></circle>
-                      <circle
-                        cx="15.9"
-                        cy="6.9"
-                        r="6"
-                        fill="url(#la1y5u3dvi)"
-                        filter="url(#b2zvzgq7fj)"
-                        mask="url(#uf3ckvfvpf)"
-                      ></circle>
-                      <circle
-                        cx="16.4"
-                        cy="17.7"
-                        r="7.5"
-                        fill="url(#2dsmrlvdik)"
-                        filter="url(#a1wq161tvl)"
-                        mask="url(#uf3ckvfvpf)"
-                      ></circle>
+          <!-- Right -->
+          <div class="col col-lg-2 zm-header__right">
+            <div class="header__item">
+              <button class="btn btn-header" data-target="#modal_theme">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <defs>
+                    <linearGradient
+                      id="j32lhg93hd"
+                      x1="62.206%"
+                      x2="18.689%"
+                      y1="70.45%"
+                      y2="39.245%"
+                    >
+                      <stop offset="0%" stop-color="#F81212"></stop>
+                      <stop offset="100%" stop-color="red"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="hjoavsus6g"
+                      x1="50%"
+                      x2="11.419%"
+                      y1="23.598%"
+                      y2="71.417%"
+                    >
+                      <stop offset="0%" stop-color="#00F"></stop>
+                      <stop offset="100%" stop-color="#0031FF"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="la1y5u3dvi"
+                      x1="65.655%"
+                      x2="25.873%"
+                      y1="18.825%"
+                      y2="56.944%"
+                    >
+                      <stop offset="0%" stop-color="#FFA600"></stop>
+                      <stop offset="100%" stop-color="orange"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="2dsmrlvdik"
+                      x1="24.964%"
+                      x2="63.407%"
+                      y1="8.849%"
+                      y2="55.625%"
+                    >
+                      <stop offset="0%" stop-color="#13EFEC"></stop>
+                      <stop offset="100%" stop-color="#00E8DF"></stop>
+                    </linearGradient>
+                    <filter
+                      id="4a7imk8mze"
+                      width="230%"
+                      height="230%"
+                      x="-65%"
+                      y="-65%"
+                      filterUnits="objectBoundingBox"
+                    >
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="3.9"
+                      ></feGaussianBlur>
+                    </filter>
+                    <filter
+                      id="301mo6jeah"
+                      width="312.7%"
+                      height="312.7%"
+                      x="-106.4%"
+                      y="-106.4%"
+                      filterUnits="objectBoundingBox"
+                    >
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="3.9"
+                      ></feGaussianBlur>
+                    </filter>
+                    <filter
+                      id="b2zvzgq7fj"
+                      width="295%"
+                      height="295%"
+                      x="-97.5%"
+                      y="-97.5%"
+                      filterUnits="objectBoundingBox"
+                    >
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="3.9"
+                      ></feGaussianBlur>
+                    </filter>
+                    <filter
+                      id="a1wq161tvl"
+                      width="256%"
+                      height="256%"
+                      x="-78%"
+                      y="-78%"
+                      filterUnits="objectBoundingBox"
+                    >
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="3.9"
+                      ></feGaussianBlur>
+                    </filter>
+                    <path
+                      id="qtpqrj1oda"
+                      d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"
+                    ></path>
+                    <path id="jggzvnjgfc" d="M0 0H20V20H0z"></path>
+                    <path
+                      id="2eiwxjmc7m"
+                      d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"
+                    ></path>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" transform="translate(2 3)">
+                    <mask id="tinejqaasb" fill="#fff">
+                      <use xlink:href="#qtpqrj1oda"></use>
+                    </mask>
+                    <use
+                      fill="#FFF"
+                      fill-opacity="0"
+                      xlink:href="#qtpqrj1oda"
+                    ></use>
+                    <g mask="url(#tinejqaasb)">
+                      <g transform="translate(-2 -3)">
+                        <mask id="uf3ckvfvpf" fill="#fff">
+                          <use xlink:href="#jggzvnjgfc"></use>
+                        </mask>
+                        <use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use>
+                        <circle
+                          cx="8.9"
+                          cy="6.8"
+                          r="9"
+                          fill="url(#j32lhg93hd)"
+                          filter="url(#4a7imk8mze)"
+                          mask="url(#uf3ckvfvpf)"
+                        ></circle>
+                        <circle
+                          cx="9.3"
+                          cy="13.7"
+                          r="5.5"
+                          fill="url(#hjoavsus6g)"
+                          filter="url(#301mo6jeah)"
+                          mask="url(#uf3ckvfvpf)"
+                        ></circle>
+                        <circle
+                          cx="15.9"
+                          cy="6.9"
+                          r="6"
+                          fill="url(#la1y5u3dvi)"
+                          filter="url(#b2zvzgq7fj)"
+                          mask="url(#uf3ckvfvpf)"
+                        ></circle>
+                        <circle
+                          cx="16.4"
+                          cy="17.7"
+                          r="7.5"
+                          fill="url(#2dsmrlvdik)"
+                          filter="url(#a1wq161tvl)"
+                          mask="url(#uf3ckvfvpf)"
+                        ></circle>
+                      </g>
                     </g>
+                    <use
+                      fill="#FFF"
+                      fill-opacity="0.05"
+                      xlink:href="#2eiwxjmc7m"
+                    ></use>
                   </g>
-                  <use
-                    fill="#FFF"
-                    fill-opacity="0.05"
-                    xlink:href="#2eiwxjmc7m"
-                  ></use>
-                </g>
-              </svg>
-            </button>
-          </div>
-          <div class="header__item">
-            <button class="btn header__btn" data-target="#modal_theme">
-              <ion-icon
-                name="arrow-up-outline"
-                class="icon header__icon"
-              ></ion-icon>
-            </button>
-          </div>
-          <div class="header__item">
-            <button class="btn header__btn" data-target="#modal_setting">
-              <ion-icon name="settings-outline" class="icon"></ion-icon>
-            </button>
-          </div>
-          <div class="header__item">
-            <button
-              class="btn header__btn header__btn--person"
-              data-target="#modal_setting"
-            >
-              <ion-icon name="person-outline" class="icon"></ion-icon>
-            </button>
+                </svg>
+              </button>
+            </div>
+            <div class="header__item header__item--upload">
+              <button class="btn btn-header" data-target="#modal_theme">
+                <ion-icon
+                  name="arrow-up-outline"
+                  class="icon header__icon"
+                ></ion-icon>
+              </button>
+            </div>
+            <div class="header__item">
+              <button class="btn btn-header" data-target="#modal_setting">
+                <ion-icon name="settings-outline" class="icon"></ion-icon>
+              </button>
+            </div>
+            <div class="header__item">
+              <button
+                class="btn btn-header btn-header--person"
+                data-target="#modal_setting"
+              >
+                <ion-icon name="person-outline" class="icon"></ion-icon>
+              </button>
+            </div>
           </div>
         </div>
       </header>
       <!-- Main page -->
-      <section class="main-page">
-        <div class="main-content">
+      <section class="zm-main-page">
+        <div class="zm-main-content">
           <!-- Gallery -->
-          <div class="content-gallery">Gallery</div>
+          <div class="zm-section zm-gallery-section">
+            <div class="zm-gallery">
+              <div class="zm-gallery-control zm-gallery-prev">
+                <button class="btn btn-circle">
+                  <ion-icon
+                    name="chevron-back-outline"
+                    class="icon icon--control"
+                  ></ion-icon>
+                </button>
+              </div>
+
+              <div class="zm-gallery-item">
+                <div class="zm-card">
+                  <div class="zm-card__link">
+                    <a href="">
+                      <div class="zm-card__image is-210x120">
+                        <figure class="card-image">
+                          <img
+                            src="./assets/images/shortcut_1.jpg"
+                            alt="alt"
+                            class="card-img"
+                          />
+                        </figure>
+                        <div class="card-opacity"></div>
+                        <div class="card-actions">
+                          <div class="card-actions__event">
+                            <button class="btn btn--action">
+                              <ion-icon
+                                name="heart-outline"
+                                class="icon"
+                              ></ion-icon></button
+                            ><button class="btn btn-play btn--action"></button
+                            ><button class="btn btn--action">
+                              <ion-icon
+                                name="ellipsis-horizontal-outline"
+                                class="icon"
+                              ></ion-icon>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="zm-card__content">
+                    <h3 class="card-title">
+                      <a href="" class="title__link"
+                        >Top 100 Nhạc Hàn Quốc Hay Nhất</a
+                      >
+                    </h3>
+                    <h4 class="card-subtitle">
+                      <a href="" class="subtitle__link"> The Chainsmokers </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="zm-gallery-control zm-gallery-next">
+                <button class="btn btn-circle">
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon icon--control"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
           <!-- Playlist -->
-          <div class="content-section playlist-section">
-            <div class="section-wrapper">
-              <h3 class="section__title">Có Thể Bạn Muốn Nghe</h3>
-              <div class="slider-wrapper">
-                <div class="slider">
-                  <div class="row">
+          <div class="zm-section zm-playlist-section">
+            <div class="zm-section-wrapper">
+              <h3 class="zm-section-title">Có Thể Bạn Muốn Nghe</h3>
+              <div class="zm-slider-wrapper">
+                <div class="zm-slider">
+                  <div class="row row--slider">
                     <div class="col col-lg-2-4 slider-item">
                       <div class="zm-card">
                         <div class="zm-card__link">
@@ -422,6 +490,11 @@
                               >Top 100 Nhạc Hàn Quốc Hay Nhất</a
                             >
                           </h3>
+                          <h4 class="card-subtitle">
+                            <a href="" class="subtitle__link">
+                              The Chainsmokers
+                            </a>
+                          </h4>
                         </div>
                       </div>
                     </div>
@@ -736,7 +809,7 @@
                   </div>
                 </div>
                 <!-- Button -->
-                <div class="slider-action">
+                <div class="zm-slider-actions">
                   <button
                     class="btn btn--disabled btn-slider-control btn-slider-prev"
                   >
@@ -756,12 +829,12 @@
             </div>
           </div>
           <!-- Shortcut -->
-          <div class="content-section shortcut-section">
-            <div class="section-wrapper">
-              <div class="section__title">Tâm Trạng Và Hoạt Động</div>
-              <div class="slider-wrapper">
-                <div class="slider">
-                  <div class="row">
+          <div class="zm-section zm-shortcut-section">
+            <div class="zm-section-wrapper">
+              <div class="zm-section-title">Tâm Trạng Và Hoạt Động</div>
+              <div class="zm-slider-wrapper">
+                <div class="zm-slider">
+                  <div class="row row--slider">
                     <div class="col col-lg-2-4 slider-item">
                       <div class="zm-card">
                         <div class="zm-card__link">
@@ -787,7 +860,7 @@
                   </div>
                 </div>
                 <!-- Button -->
-                <div class="slider-action">
+                <div class="zm-slider-actions">
                   <button
                     class="btn btn--disabled btn-slider-control btn-slider-prev"
                   >
@@ -807,18 +880,17 @@
             </div>
           </div>
           <!-- International music -->
-          <div class="content-section">
-            <div class="section-wrapper">
-              <h3 class="section__title">Có Thể Bạn Muốn Nghe</h3>
-              <div class="slider-wrapper">
-                <div class="slider">
-                  <div class="row">
+          <div class="zm-section zm-international-music-section">
+            <div class="zm-section-wrapper">
+              <h3 class="zm-section-title">Có Thể Bạn Muốn Nghe</h3>
+              <div class="zm-slider-wrapper">
+                <div class="zm-slider">
+                  <div class="row row--slider">
                     <div class="col col-lg-2-4 slider-item">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
                             <div class="zm-card__image">
-                              <!-- Tag mark up image -->
                               <figure class="card-image">
                                 <img
                                   src="./assets/images/shortcut_1.jpg"
@@ -865,7 +937,7 @@
                   </div>
                 </div>
                 <!-- Button -->
-                <div class="slider-action">
+                <div class="zm-slider-actions">
                   <button
                     class="btn btn--disabled btn-slider-control btn-slider-prev"
                   >
@@ -885,17 +957,16 @@
             </div>
           </div>
           <!-- Channel -->
-          <div class="content-section channel-section">
-            <div class="section-wrapper">
-              <div class="section__title">Tâm Trạng Và Hoạt Động</div>
-              <div class="channel">
+          <div class="zm-section zm-channel-section">
+            <div class="zm-section-wrapper">
+              <div class="zm-section-title">Tâm Trạng Và Hoạt Động</div>
+              <div class="zm-channel">
                 <div class="row">
                   <div class="col col-lg-4">
                     <div class="zm-card">
                       <div class="zm-card__link">
                         <a href="">
                           <div class="zm-card__image is-210x120">
-                            <!-- Tag mark up image -->
                             <figure class="card-image">
                               <img
                                 src="./assets/images/shortcut_1.jpg"
@@ -919,9 +990,14 @@
                         </a>
                       </div>
                       <div class="zm-card__content">
-                        <div class="content__event">
+                        <h3 class="card-title">
+                          <a href="" class="title__link"
+                            >Top 100 Nhạc Hàn Quốc Hay Nhất</a
+                          >
+                        </h3>
+                        <div class="box-event">
                           <div class="event__left">
-                            <h3 class="content__event-title">Lượt chúc mừng</h3>
+                            <h3 class="event-title">Lượt chúc mừng</h3>
                             <div class="avatars">
                               <div class="avatars-amount">+1K</div>
                               <div class="avatars-item">
@@ -958,8 +1034,8 @@
             </div>
           </div>
           <!-- Chart -->
-          <div class="content-section chart-section">
-            <div class="section-wrapper">
+          <div class="zm-section zm-chart-section">
+            <div class="zm-section-wrapper">
               <div class="chart__bg-image"></div>
               <div class="chart__bg-overplay"></div>
               <div class="chart__content">
@@ -970,42 +1046,14 @@
                 <div class="row chart-body">
                   <div class="col col-lg-4">
                     <div class="chart-of-songs">
-                      <!-- <div class="charts">
-                        <div class="chart-song active">
-                          <div class="media">
-                            <div class="media__arrange">
-                              <span class="number-rating top-1-rating">1</span>
-                            </div>
-                            <div class="media__info">
-                              <div class="song">
-                                <div class="song__thumbnail">
-                                  <img
-                                    src="./assets/images/playlist_1.jpg"
-                                    alt="alt"
-                                    class="thumbnail__image"
-                                  />
-                                  <div class="thumbnail__actions">
-                                    <div class="play-action"></div>
-                                  </div>
-                                </div>
-                                <div class="song__info">
-                                  <h4 class="info__name">Rồi Tới Luôn</h4>
-                                  <a href="#" class="info__singer">Nal</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="media__evaluate">
-                              <span class="number-evaluate">100%</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
                       <div class="charts">
                         <div class="chart-song-item">
                           <div class="zm-media">
                             <div class="zm-media__left">
                               <div class="song-prefix">
-                                <span class="number top-1-rating">1</span>
+                                <span class="number-rating top-1-rating"
+                                  >1</span
+                                >
                               </div>
                               <div class="song-thumbnail">
                                 <figure class="song-image is-60x60">
@@ -1028,7 +1076,7 @@
                                   <h4 class="box-text__subtitle">
                                     <a
                                       href="https://facebook.com"
-                                      class="subtitle__link"
+                                      class="subtitle-link"
                                       >Vũ Phụng Tiên</a
                                     >
                                   </h4>
@@ -1037,6 +1085,12 @@
                             </div>
                             <div class="zm-media__right">
                               <div class="box-text">
+                                <h3 class="box-text__title">
+                                  Chưa Từng Vì Nhau
+                                </h3>
+                                <h4 class="box-text__subtitle">
+                                  Vũ Phụng Tiên
+                                </h4>
                                 <span class="box-text__evaluate">56%</span>
                               </div>
                             </div>
@@ -1052,33 +1106,7 @@
                   </div>
                   <div class="col col-lg-8">
                     <div class="chart-monitor">
-                      <div class="chart-tooltip">
-                        <div class="chart-song">
-                          <div class="media">
-                            <div class="media__info">
-                              <div class="song">
-                                <div class="song__thumbnail">
-                                  <img
-                                    src="./assets/images/playlist_1.jpg"
-                                    alt="alt"
-                                    class="thumbnail__image"
-                                  />
-                                  <div class="thumbnail__actions">
-                                    <div class="play-action"></div>
-                                  </div>
-                                </div>
-                                <div class="song__info">
-                                  <h4 class="info__name">Rồi Tới Luôn</h4>
-                                  <a href="#" class="info__singer">Nal</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="media__evaluate">
-                              <span class="number-evaluate">100%</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <div class="chart-tooltip"></div>
                     </div>
                   </div>
                 </div>
@@ -1086,8 +1114,8 @@
             </div>
           </div>
           <!-- Zing Chart -->
-          <div class="content-section zing-chart-section">
-            <div class="zing-chart">
+          <div class="zm-section zm-zing-chart-section">
+            <div class="zm-zing-chart">
               <div class="row">
                 <div class="col col-lg-4">
                   <div class="zm-card">
@@ -1122,7 +1150,7 @@
             <h3 class="zm-section-title">Mới phát hành</h3>
             <div class="zm-slider-wrapper">
               <div class="zm-slider zm-slider-new-release">
-                <div class="row">
+                <div class="row row--slider">
                   <div class="col col-lg-4">
                     <div class="zm-new-release-item">
                       <div class="zm-media">
@@ -1191,7 +1219,9 @@
                     <div class="list-item zm-karaoke-item">
                       <div class="zm-media">
                         <div class="zm-media__left">
-                          <div class="song-prefix"></div>
+                          <div class="song-prefix">
+                            <span class="number-rating">1</span>
+                          </div>
                           <div class="song-thumbnail">
                             <figure class="song-image is-40x40">
                               <img
@@ -1211,7 +1241,7 @@
                               <h4 class="box-text__subtitle">
                                 <a
                                   href="https://facebook.com"
-                                  class="subtitle__link"
+                                  class="subtitle-link"
                                   >Vũ Phụng Tiên</a
                                 >
                               </h4>
@@ -1263,7 +1293,7 @@
                               <h4 class="box-text__subtitle">
                                 <a
                                   href="https://facebook.com"
-                                  class="subtitle__link"
+                                  class="subtitle-link"
                                   >Vũ Phụng Tiên</a
                                 >
                               </h4>
@@ -1298,6 +1328,94 @@
             </div>
           </div>
           <!-- MV Hot -->
+          <div class="zm-section zm-mv-section">
+            <div class="zm-section-title">MV hot</div>
+            <div class="zm-slider-wrapper">
+              <div class="zm-slider zm-slider-mv">
+                <div class="row row--slider">
+                  <div class="col col-lg-4">
+                    <div class="zm-card">
+                      <div class="zm-card__link mb-0">
+                        <a href="">
+                          <div class="zm-card__image is-210x120">
+                            <figure class="card-image">
+                              <img
+                                src="./assets/images/shortcut_1.jpg"
+                                alt="alt"
+                                class="card-img"
+                              />
+                            </figure>
+                            <div class="card-opacity"></div>
+                            <div class="card-actions">
+                              <div class="card-actions__event">
+                                <button
+                                  class="btn btn-play btn--action"
+                                ></button>
+                              </div>
+                            </div>
+                            <div class="card-brand">04:14</div>
+                            <div class="card-brand-vip">
+                              <div class="vip-label"></div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="zm-card__content">
+                        <div class="content-mv">
+                          <div class="zm-media">
+                            <div class="zm-media__left">
+                              <a href="">
+                                <div class="song-thumbnail is-rounded">
+                                  <figure class="song-image is-40x40">
+                                    <img
+                                      src="./assets/images/shortcut_1.jpg"
+                                      alt="alt"
+                                      class="song-img"
+                                    />
+                                  </figure>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="zm-media__right">
+                              <div class="box-text">
+                                <h3 class="box-text__title">
+                                  <a href="" class="title-link">
+                                    Chưa Từng Vì Nhau
+                                  </a>
+                                </h3>
+                                <h4 class="box-text__subtitle">
+                                  <a href="" class="subtitle-link"
+                                    >Vũ Phụng Tiên</a
+                                  >,
+                                  <a href="" class="subtitle-link">ACV</a>
+                                </h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="zm-slider-actions">
+                <button
+                  class="btn btn--disabled btn-slider-control btn-slider-prev"
+                >
+                  <ion-icon
+                    name="chevron-back-outline"
+                    class="icon icon--control"
+                  ></ion-icon>
+                </button>
+                <button class="btn btn-slider-control btn-slider-next">
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon icon--control"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
           <!-- Mix Zing Choice -->
           <div class="zm-section zm-mix-section">
             <h3 class="zm-section-title">mix zing choice</h3>
@@ -1354,37 +1472,263 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex mix-right">
-                  <div class="flex-item">
-                    <div class="list">
-                      <div class="list-item">
-                        <div class="song">
-                          <div class="song__intro">
-                            <div class="song__ordinal">
+                <div class="mix-right">
+                  <div class="mix-right__item">
+                    <div class="zm-list">
+                      <div class="list-item zm-mix-item">
+                        <div class="zm-media">
+                          <div class="zm-media__left">
+                            <div class="song-prefix">
                               <span class="number">1. </span>
-                              <!-- <span class="icon-play"></span> -->
+                              <button class="btn btn-play no-circle"></button>
                             </div>
-                            <div class="song__info">
-                              <div class="song-thumbnail"></div>
-                              <div class="song-related">
-                                <div
-                                  title="Đau Để Trưởng Thành"
-                                  class="song__name"
-                                >
-                                  Đau Để Trưởng Thành
-                                </div>
+                            <div class="song-thumbnail">
+                              <figure class="song-image is-60x60">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="song-img"
+                                />
+                              </figure>
+                              <div class="song-opacity"></div>
+                              <div class="song-actions">
+                                <button class="btn btn--action"></button>
+                              </div>
+                            </div>
+                            <div class="song-info">
+                              <div class="box-text">
+                                <h3 class="box-text__title">
+                                  Chưa Từng Vì Nhau
+                                </h3>
+                                <h4 class="box-text__subtitle">
+                                  <a
+                                    href="https://facebook.com"
+                                    class="subtitle-link"
+                                    >Vũ Phụng Tiên</a
+                                  >
+                                </h4>
                               </div>
                             </div>
                           </div>
-                          <div class="song__event">
-                            <div class="event-mix"></div>
+                          <div class="zm-media__right">
+                            <div class="box-text">
+                              <h3 class="box-text__title">Chưa Từng Vì Nhau</h3>
+                              <h4 class="box-text__subtitle">Vũ Phụng Tiên</h4>
+                              <span class="box-text__evaluate">56%</span>
+                            </div>
+                            <div class="box-actions">
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="megaphone-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="ellipsis-horizontal-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item zm-mix-item">
+                        <div class="zm-media">
+                          <div class="zm-media__left">
+                            <div class="song-prefix">
+                              <span class="number">1. </span>
+                              <button class="btn btn-play no-circle"></button>
+                            </div>
+                            <div class="song-thumbnail">
+                              <figure class="song-image is-60x60">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="song-img"
+                                />
+                              </figure>
+                              <div class="song-opacity"></div>
+                              <div class="song-actions">
+                                <button class="btn btn--action"></button>
+                              </div>
+                            </div>
+                            <div class="song-info">
+                              <div class="box-text">
+                                <h3 class="box-text__title">
+                                  Chưa Từng Vì Nhau
+                                </h3>
+                                <h4 class="box-text__subtitle">
+                                  <a
+                                    href="https://facebook.com"
+                                    class="subtitle-link"
+                                    >Vũ Phụng Tiên</a
+                                  >
+                                </h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="zm-media__right">
+                            <div class="box-text">
+                              <h3 class="box-text__title">Chưa Từng Vì Nhau</h3>
+                              <h4 class="box-text__subtitle">Vũ Phụng Tiên</h4>
+                              <span class="box-text__evaluate">56%</span>
+                            </div>
+                            <div class="box-actions">
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="megaphone-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="ellipsis-horizontal-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <!-- abc -->
+                  <div class="mix-right__item">
+                    <div class="zm-list">
+                      <div class="list-item zm-mix-item">
+                        <div class="zm-media">
+                          <div class="zm-media__left">
+                            <div class="song-prefix">
+                              <span class="number">1. </span>
+                              <button class="btn btn-play no-circle"></button>
+                            </div>
+                            <div class="song-thumbnail">
+                              <figure class="song-image is-60x60">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="song-img"
+                                />
+                              </figure>
+                              <div class="song-opacity"></div>
+                              <div class="song-actions">
+                                <button class="btn btn--action"></button>
+                              </div>
+                            </div>
+                            <div class="song-info">
+                              <div class="box-text">
+                                <h3 class="box-text__title">
+                                  Chưa Từng Vì Nhau
+                                </h3>
+                                <h4 class="box-text__subtitle">
+                                  <a
+                                    href="https://facebook.com"
+                                    class="subtitle-link"
+                                    >Vũ Phụng Tiên</a
+                                  >
+                                </h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="zm-media__right">
+                            <div class="box-text">
+                              <h3 class="box-text__title">Chưa Từng Vì Nhau</h3>
+                              <h4 class="box-text__subtitle">Vũ Phụng Tiên</h4>
+                              <span class="box-text__evaluate">56%</span>
+                            </div>
+                            <div class="box-actions">
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="megaphone-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="ellipsis-horizontal-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-item zm-mix-item">
+                        <div class="zm-media">
+                          <div class="zm-media__left">
+                            <div class="song-prefix">
+                              <span class="number">1. </span>
+                              <button class="btn btn-play no-circle"></button>
+                            </div>
+                            <div class="song-thumbnail">
+                              <figure class="song-image is-60x60">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="song-img"
+                                />
+                              </figure>
+                              <div class="song-opacity"></div>
+                              <div class="song-actions">
+                                <button class="btn btn--action"></button>
+                              </div>
+                            </div>
+                            <div class="song-info">
+                              <div class="box-text">
+                                <h3 class="box-text__title">
+                                  Chưa Từng Vì Nhau
+                                </h3>
+                                <h4 class="box-text__subtitle">
+                                  <a
+                                    href="https://facebook.com"
+                                    class="subtitle-link"
+                                    >Vũ Phụng Tiên</a
+                                  >
+                                </h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="zm-media__right">
+                            <div class="box-text">
+                              <h3 class="box-text__title">Chưa Từng Vì Nhau</h3>
+                              <h4 class="box-text__subtitle">Vũ Phụng Tiên</h4>
+                              <span class="box-text__evaluate">56%</span>
+                            </div>
+                            <div class="box-actions">
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="megaphone-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                              <div class="box-item">
+                                <button class="btn btn--actions">
+                                  <ion-icon
+                                    name="ellipsis-horizontal-outline"
+                                    class="icon"
+                                  ></ion-icon>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

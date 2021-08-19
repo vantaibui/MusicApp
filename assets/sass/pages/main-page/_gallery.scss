@@ -1,0 +1,60 @@
+.zm-gallery {
+  position: relative;
+
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 20px;
+  &:hover {
+    .zm-gallery-control {
+      opacity: 1;
+    }
+  }
+
+  .zm-gallery-control {
+    position: absolute;
+    top: 54%;
+    left: 25px;
+    transform: translateY(-50%);
+    transition: opacity linear 0.8s;
+    z-index: 2;
+    opacity: 0;
+    &.zm-gallery-next {
+      left: unset;
+      right: 25px;
+    }
+    .btn {
+      border: none;
+      background-color: hsla(0, 0%, 100%, 0.15);
+      box-shadow: 0 2px 4px 0 rgba(226, 102, 102, 0.15);
+    }
+    .icon--control {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  .zm-gallery-item {
+    padding: 15px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+
+    .zm-card {
+      .zm-card__link {
+        margin-bottom: 0;
+        .zm-card__image {
+          border-radius: 8px;
+          .card-opacity,
+          .card-actions {
+            display: none;
+          }
+        }
+      }
+      .zm-card__content {
+        display: none;
+      }
+    }
+  }
+}

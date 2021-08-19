@@ -1,4 +1,7 @@
 .number {
+  @include text($color-white-0, 1.3rem, $fw-medium);
+}
+.number-rating {
   line-height: 1;
   text-align: center;
   -webkit-text-stroke: 1px $color-white-0;

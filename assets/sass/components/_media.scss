@@ -23,6 +23,12 @@
         }
       }
     }
+    .zm-media__right {
+      .box-actions {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
   .zm-media__left {
     flex-basis: auto;
@@ -33,13 +39,17 @@
     @include flex-box(flex-start, flex-start);
 
     .song-prefix {
-      margin-right: $margin-3;
+      margin-right: $margin-6;
     }
     .song-thumbnail {
       position: relative;
       margin-right: $margin-3;
       border-radius: 4px;
       overflow: hidden;
+      &.is-rounded {
+        border-radius: 50%;
+        overflow: hidden;
+      }
       .song-image {
         margin: 0;
         &.is-40x40 {
@@ -49,11 +59,8 @@
         &.is-60x60 {
           width: 60px;
           height: 60px;
-          .song-actions {
-            top: 30%;
-            left: 40%;
-          }
         }
+
         .song-img {
           width: 100%;
           height: 100%;
@@ -71,8 +78,8 @@
       }
       .song-actions {
         position: absolute;
-        top: 25%;
-        left: 35%;
+        top: 10%;
+        left: 30%;
 
         visibility: hidden;
         opacity: 0;
@@ -99,7 +106,7 @@
           @include text($color-white-0, $fs-1, $fw-bold);
         }
         .box-text__subtitle {
-          .subtitle__link {
+          .subtitle-link {
             &:hover {
               text-decoration: underline;
               color: $color-purple-1;
@@ -119,22 +126,32 @@
 
     position: relative;
     height: 100%;
-
     flex-direction: column;
     @include flex-box(space-between, flex-start);
     .box-text {
-      .box-text__title {
+      .box-text__title,
+      .title-link {
         line-height: 1.38;
         @include text($color-white-0, $fs-1, $fw-bold);
+        transition: all 0.5s;
       }
-      .box-text__subtitle {
+      .box-text__subtitle,
+      .subtitle-link {
         margin-top: $margin-0;
         line-height: 1.38;
         @include text($color-gray-2, 1.2rem, $fw-medium);
+        transition: all 0.5s;
       }
       .box-text__evaluate {
         line-height: 1.56;
         @include text($color-white-0, $fs-1, $fw-bold);
+      }
+      .title-link:hover,
+      .subtitle-link:hover {
+        color: $color-purple-1;
+      }
+      .subtitle-link:hover {
+        text-decoration: underline;
       }
     }
     .box-text-release {
@@ -157,7 +174,7 @@
       @include flex-box(center, center);
       visibility: hidden;
       opacity: 0;
-      transition: all ease 0.3s;
+      transition: all ease 0.6s;
       .box-item {
         position: relative;
         flex-grow: 1;
@@ -178,7 +195,7 @@
           opacity: 1;
         }
         .btn--actions {
-          padding: 3px;
+          padding: 2px;
           margin: 0 2px;
           .icon {
             width: 16px;

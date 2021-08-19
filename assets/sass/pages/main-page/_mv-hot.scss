@@ -1,0 +1,21 @@
+.zm-mv-section {
+  .zm-card__content {
+    .zm-media {
+      padding: $padding-3 0;
+      opacity: 0.5;
+      .zm-media__left,
+      .zm-media__right {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+      .zm-media__left {
+        .song-thumbnail {
+          margin-right: 0;
+        }
+      }
+      .zm-media__right {
+      }
+    }
+  }
+}

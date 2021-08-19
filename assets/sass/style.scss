@@ -13,20 +13,22 @@
 @import "./base/base";
 
 // Components
+@import "./components/slider";
 @import "./components/button";
 @import "./components/icon";
 @import "./components/card";
 @import "./components/media";
 @import "./components/form";
+@import "./components/number";
 @import "./components/modal";
-@import "./components/rating";
 
 // Layout
 @import "./layout/layout";
+@import "./layout/sidebar";
+@import "./layout/header";
+@import "./layout/footer";
 
 // Page
-@import "./pages/sidebar";
-@import "./pages/header";
-@import "./pages/main-page/contents/contents";
+@import "./pages/main-page/contents";
 
 @import "./pages/playing-bar";

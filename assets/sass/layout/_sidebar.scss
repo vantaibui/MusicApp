@@ -1,8 +1,7 @@
-.sidebar {
+.zm-sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  right: 240px;
   z-index: 10;
 
   width: 240px;
@@ -14,29 +13,26 @@
   //   height: calc(100% - 70px);
   // height: 100vh;
 
-  background-color: #231b2e;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  background-color: $bg-sidebar-0;
   padding-top: $padding-2;
   padding-bottom: 54px;
-  .sidebar__logo {
-    width: 240px;
-    height: 70px;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    padding-left: $padding-11 + 2;
-    padding-right: $padding-10 + 1;
-    .sidebar__img {
+  .zm-sidebar__logo {
+    @include flex-box(center, center);
+    padding: $padding-1 $padding-10 + 1 $padding-1 $padding-11 + 2;
+    .zm-logo {
       width: 120px;
       height: 40px;
-      padding-bottom: $padding-1;
+      background-image: url("../../../assets/images/logo-dark.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
       &:hover {
         filter: brightness(0.9);
       }
     }
   }
-  .sidebar__main {
+  .zm-sidebar__main {
     margin-top: $margin-3;
     margin-bottom: $margin-6;
     //    Navbar menu
@@ -160,6 +156,31 @@
     .sidebar__login-btn {
       margin-top: $margin-6;
       min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .zm-sidebar {
+    width: 70px;
+    background-color: $bg-sidebar-1;
+    transition: width ease 2s;
+    .zm-sidebar__logo {
+      padding-top: $padding-0;
+      padding-left: 0;
+      padding-right: 0;
+      .zm-logo {
+        width: 45px;
+        height: 45px;
+        background-image: url("../../../assets/images/logo-small.svg");
+      }
+    }
+    .zm-sidebar__main {
+      .navbar-menu__item {
+        .navbar-menu__text {
+          display: none;
+        }
+      }
     }
   }
 }

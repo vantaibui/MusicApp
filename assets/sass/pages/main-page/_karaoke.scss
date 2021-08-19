@@ -16,10 +16,11 @@
     .zm-media__left {
       flex-grow: 1;
       flex-shrink: 1;
-
+      .song-prefix {
+        display: none;
+      }
       .song-info {
         .box-text__title {
-          // margin-top: -8px;
           font-size: $fs-0;
           font-weight: $fw-medium;
           cursor: pointer;

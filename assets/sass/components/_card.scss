@@ -97,16 +97,14 @@
       .card-content {
         position: absolute;
         inset: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-box(center, center);
 
         &.card-content--event {
-          justify-content: flex-end;
-          align-items: flex-end;
+          inset: unset;
+          bottom: 0;
+          left: 0;
+          right: 0;
         }
-
         .box-text {
           width: 100%;
           text-align: center;
@@ -149,6 +147,30 @@
           }
         }
       }
+      .card-brand {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+
+        padding: $padding-0 - 2 $padding-1;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.7);
+        @include text($color-white-0, 1.2rem, $fw-normal);
+      }
+      .card-brand-vip {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        .vip-label {
+          width: 40px;
+          height: 18px;
+          background-image: url(../../../assets/images/vip-label.svg);
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
     }
   }
   .zm-card__content {
@@ -181,11 +203,11 @@
       }
     }
 
-    .content__event {
+    .box-event {
       @include flex-box(space-between, center);
 
       .event__left {
-        .content__event-title {
+        .event-title {
           height: 1.4rem;
           line-height: 1.4rem;
           margin-bottom: $margin-0;

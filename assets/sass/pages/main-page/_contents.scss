@@ -1,0 +1,85 @@
+// .main-content {
+//   width: 100%;
+//   height: 100%;
+//   margin-top: 70px;
+//   padding: 0 $padding-10 * 2 + 2;
+
+//   .content-gallery {
+//     position: relative;
+//   }
+//   .content-section {
+//     margin-top: $margin-13;
+//     &.playlist-section,
+//     &.channel-section {
+//       height: 300px;
+//       .slider-wrapper,
+//       .channel-wrapper {
+//         height: 260px;
+//       }
+//     }
+//     &.shortcut-section {
+//       height: 158px;
+//       .slider-wrapper {
+//         height: 120px;
+//       }
+//     }
+//     &.chart-section {
+//       height: 420px;
+//     }
+
+//     .section-wrapper {
+//       position: relative;
+//       width: 100%;
+//       height: 100%;
+//       .section__title {
+//         height: 2.6rem;
+//         line-height: 2.6rem;
+//         margin-bottom: $margin-4;
+//         text-transform: capitalize;
+//         @include text($color-white-0, $fs-3, $fw-bold);
+//       }
+//     }
+//   }
+// }
+.zm-main-content {
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+  padding: 0 5rem;
+  // New
+  .zm-section {
+    margin-top: $margin-13;
+
+    // Chart
+    &.zm-chart-section {
+      height: 420px;
+    }
+    // Mix zing
+    &.zm-mix-section {
+      margin-top: $margin-13;
+    }
+    // Title
+    .zm-section-title {
+      margin-bottom: $margin-3;
+      text-transform: capitalize;
+      @include text($color-white-0, $fs-3, $fw-bold);
+    }
+    // Section wrapper
+    .zm-section-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@import "./gallery";
+@import "./playlist";
+@import "./shortcut";
+@import "./channel";
+@import "./chart";
+@import "./zing_chart";
+@import "./new-release";
+@import "./karaoke";
+@import "./mv-hot";
+@import "./mix-zing";

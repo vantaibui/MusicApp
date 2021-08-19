@@ -4,12 +4,12 @@
   min-width: 768px;
   // height: 100vh;
 
-  .sidebar {
+  .zm-sidebar {
     flex-basis: 240px;
     max-width: 240px;
     height: 100vh;
   }
-  .main-page {
+  .zm-main-page {
     flex-basis: calc(100% - 240px);
     max-width: calc(100% - 240px);
 
@@ -17,5 +17,20 @@
     top: 0;
     left: 240px;
     right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .layout {
+    .zm-sidebar {
+      flex-basis: 70px;
+      max-width: 70px;
+      height: 100vh;
+    }
+    .zm-main-page {
+      flex-basis: calc(100% - 70px);
+      max-width: calc(100% - 70px);
+      left: 70px;
+    }
   }
 }

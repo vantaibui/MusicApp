@@ -1,0 +1,143 @@
+.zm-mix-section {
+  .zm-media {
+    height: 34px;
+    padding: 0 $padding-4 0 $padding-1;
+    .zm-media__left {
+      flex-grow: 1;
+      flex-shrink: 1;
+      align-items: center;
+      .song-prefix {
+        position: relative;
+
+        .btn {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(50%, -50%);
+          padding: 0;
+          width: 0;
+          height: 0;
+          display: none;
+          &::before {
+            border-radius: 0;
+            border-width: 5px 10px;
+          }
+        }
+      }
+      .song-thumbnail {
+        display: none;
+      }
+      .song-info {
+        .box-text__title {
+          @include text($color-white-0, 1.2rem, $fw-medium);
+          &:hover {
+            color: $color-purple-1;
+          }
+        }
+        .box-text__subtitle {
+          display: none;
+        }
+      }
+    }
+    .zm-media__right {
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: unset;
+      .box-text {
+        display: none;
+      }
+      .box-actions {
+        justify-content: flex-end;
+        .btn--actions {
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
+
+.zm-mix {
+  margin-bottom: $margin-4;
+  padding: $padding-8;
+  border-radius: 4px;
+  background-color: $color-purple-3;
+  box-shadow: 0 2px 10px 0 rgba($color-gray-1, 0.4);
+  .mix-content {
+    @include flex-box(space-between, flex-start);
+    .mix-left,
+    .mix-right {
+      @include flex-box(flex-start, flex-start);
+    }
+    .mix-left {
+      width: 370px;
+      border-right: 1px solid rgba($color-gray-2, 0.2);
+      .mix-flex {
+        flex-grow: 1;
+        &.mix-info {
+          position: relative;
+          width: 200px;
+          height: 100%;
+          min-height: 170px;
+          padding-left: $padding-6;
+          padding-right: $padding-6;
+        }
+        .mix-info-content {
+          width: 100%;
+          height: 100%;
+          .mix-info__title {
+            margin-bottom: $margin-1;
+            &:hover {
+              .mix-info__link {
+                color: $color-purple-1;
+              }
+            }
+            .mix-info__link {
+              transition: all 0.5s;
+              @include text($color-white-0, $fs-2, $fw-bold);
+            }
+          }
+          .mix-info__subtitle {
+            line-height: 2.15;
+            cursor: auto;
+            @include text($color-gray-2, 1.3rem, $fw-regular);
+          }
+          .mix-info__counter {
+            position: absolute;
+            bottom: 0;
+            cursor: auto;
+            @include text(rgba($color-gray-2, 0.8), 1rem, $fw-medium);
+            .unit {
+              margin-left: 2px;
+            }
+          }
+        }
+      }
+    }
+    .mix-right {
+      width: calc(100% - 370px);
+      padding-left: $padding-3;
+      @include flex-box(flex-start, flex-start);
+      .mix-right__item {
+        width: 50%;
+      }
+      .zm-mix-item {
+        border-radius: 4px;
+        &:hover {
+          box-shadow: 0 2px 10px 0 rgba(66, 66, 66, 0.4);
+          background-color: hsla(0, 0%, 100%, 0.1);
+          .song-prefix {
+            .number {
+              visibility: hidden;
+            }
+            .btn {
+              display: block;
+              &::before {
+                border-left-color: $color-purple-0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.zm-chart-section {
+  .zm-section-wrapper {
+    padding: $padding-8;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .chart__bg-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../../../assets/images/bg-chart.jpg");
+  }
+  .chart__bg-overplay {
+    position: absolute;
+    inset: 0;
+    opacity: 0.95;
+    background: linear-gradient(180deg, #740091, #2d1a1a);
+  }
+  .chart__content {
+    position: relative;
+    .chart-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: $margin-8;
+      .chart-header__link {
+        @include text($color-white-0, $fs-7, $fw-bold);
+      }
+      .chart-header__btn {
+        position: relative;
+        margin-left: $margin-1;
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        background-color: $color-white-0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-20%, -50%);
+          border-width: 6px 10px;
+          border-style: solid;
+          border-color: transparent transparent transparent $color-purple-0;
+          border-radius: 2px;
+        }
+      }
+    }
+    .chart-body {
+      .chart-of-songs {
+        .charts {
+          .chart-song-item {
+            margin-bottom: $margin-3;
+            border-radius: 4px;
+            background-color: hsla(0, 0%, 100%, 0.07);
+            &:hover,
+            &.active {
+              background-color: hsla(0, 0%, 100%, 0.2);
+            }
+            .zm-media {
+              padding: $padding-3 $padding-6;
+              cursor: default;
+              .zm-media__left {
+                flex: 0 0 85%;
+                max-width: 85%;
+                @include flex-box(flex-start, center);
+
+                .song-thumbnail {
+                  cursor: pointer;
+                  .song-actions {
+                    top: 30%;
+                    left: 40%;
+                  }
+                }
+                .song-info {
+                  .box-text__title {
+                    font-size: $fs-0;
+                    font-weight: $fw-medium;
+                  }
+                  .box-text__subtitle {
+                    font: size 1.2em;
+                    font-weight: $fw-regular;
+                  }
+                }
+              }
+              .zm-media__rigth {
+                flex: 0 0 15%;
+                max-width: 15%;
+              }
+            }
+          }
+        }
+        .show-more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .show-more__btn {
+            margin-top: 5px;
+            padding: $padding-2 $padding-11;
+          }
+        }
+      }
+      .chart-monitor {
+      }
+    }
+  }
+}
+
+.zm-chart-section {
+  .zm-media {
+    .zm-media__right {
+      .box-text__title,
+      .box-text__subtitle {
+        display: none;
+      }
+    }
+  }
+}
