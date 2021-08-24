@@ -11,8 +11,8 @@
 //   border-radius: 50%;
 //   cursor: pointer;
 // }
-%span-0 {
-  @include spanTag(
+%label-0 {
+  @include labelTag(
     $color-red-0,
     0.9rem,
     $fw-normal,
@@ -22,4 +22,18 @@
     2px,
     $color-white-0
   );
+}
+%label-1 {
+  @include labelTag(
+    $color-white-0,
+    0.8rem,
+    $fw-bold,
+    uppercase,
+    $padding-0 - 1,
+    $padding-1,
+    3px,
+    $color-red-2
+  );
+  line-height: 1;
+  letter-spacing: 2px;
 }

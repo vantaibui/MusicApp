@@ -9,142 +9,139 @@
     <link rel="shortcut icon" href="./assets/images/logo-icon.png" />
     <!-- Font awesome -->
     <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="layout">
+    <div class="layout has-player">
       <!-- Sidebar -->
       <aside class="zm-sidebar">
-        <a href="index.html" class="zm-sidebar__logo">
-          <!-- <img
-            class="sidebar__img"
-            src="./assets/images/logo-dark.svg"
-            alt="logo"
-          /> -->
-          <div class="zm-logo"></div>
-        </a>
-        <nav class="zm-sidebar__main">
-          <ul class="navbar-menu">
-            <li class="navbar-menu__item">
-              <a title="Cá Nhân" href="" class="navbar-menu__link">
-                <!-- <ion-icon name="albums-outline" class="navbar-menu__icon">
-                  </ion-icon> -->
-                <ion-icon
-                  name="musical-note-outline"
-                  class="navbar-menu__icon navbar-menu__icon--personal"
-                ></ion-icon>
-                <span class="navbar-menu__text">Cá Nhân</span>
-              </a>
-            </li>
-            <li class="navbar-menu__item active">
-              <a title="Cá Nhân" href="" class="navbar-menu__link">
-                <ion-icon
-                  name="disc-outline"
-                  class="navbar-menu__icon"
-                ></ion-icon>
-                <span class="navbar-menu__text">Khám Phá</span>
-              </a>
-            </li>
-            <li class="navbar-menu__item">
-              <a title="Cá Nhân" href="" class="navbar-menu__link">
-                <ion-icon
-                  name="pulse-outline"
-                  class="navbar-menu__icon navbar-menu__icon--border"
-                ></ion-icon>
-                <span class="navbar-menu__text">#zingchart</span>
-              </a>
-            </li>
-            <li class="navbar-menu__item">
-              <a title="Cá Nhân" href="" class="navbar-menu__link">
-                <ion-icon
-                  name="radio-outline"
-                  class="navbar-menu__icon"
-                ></ion-icon>
-                <span class="navbar-menu__text">Radio</span>
-              </a>
-            </li>
-            <li class="navbar-menu__item">
-              <a title="Cá Nhân" href="" class="navbar-menu__link">
-                <ion-icon
-                  name="list-outline"
-                  class="navbar-menu__icon navbar-menu__icon--square"
-                ></ion-icon>
-                <span class="navbar-menu__text">Theo Dõi</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="sidebar__separate"></div>
-        <div class="sidebar__scrollbar">
+        <div class="zm-sidebar-wrapper">
+          <a href="index.html" class="zm-sidebar__logo">
+            <div class="zm-logo"></div>
+          </a>
           <nav class="zm-sidebar__main">
             <ul class="navbar-menu">
               <li class="navbar-menu__item">
                 <a title="Cá Nhân" href="" class="navbar-menu__link">
+                  <!-- <ion-icon name="albums-outline" class="navbar-menu__icon">
+                  </ion-icon> -->
                   <ion-icon
-                    name="musical-notes-outline"
+                    name="musical-note-outline"
+                    class="navbar-menu__icon navbar-menu__icon--personal"
+                  ></ion-icon>
+                  <span class="navbar-menu__text">Cá Nhân</span>
+                </a>
+              </li>
+              <li class="navbar-menu__item active">
+                <a title="Cá Nhân" href="" class="navbar-menu__link">
+                  <ion-icon
+                    name="disc-outline"
                     class="navbar-menu__icon"
                   ></ion-icon>
-                  <span class="navbar-menu__text">Nhạc Mới</span>
+                  <span class="navbar-menu__text">Khám Phá</span>
                 </a>
               </li>
-              <li class="navbar-menu__item">
-                <a title="Cá Nhân" href="" class="navbar-menu__link">
-                  <div class="navbar-menu__list-icon">
-                    <div class="row list-icon__row">
-                      <div class="col-lg-6 list-icon__item">
-                        <ion-icon name="tablet-landscape-outline"></ion-icon>
-                      </div>
-                      <div class="col-lg-6 list-icon__item">
-                        <ion-icon name="ellipse-outline"></ion-icon>
-                      </div>
-                      <div class="col-lg-6 list-icon__item">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </div>
-                      <div class="col-lg-6 list-icon__item">
-                        <ion-icon name="play-outline"></ion-icon>
-                      </div>
-                    </div>
-                  </div>
-                  <span class="navbar-menu__text">Thể Loại</span>
-                </a>
-              </li>
-
               <li class="navbar-menu__item">
                 <a title="Cá Nhân" href="" class="navbar-menu__link">
                   <ion-icon
-                    name="star-outline"
+                    name="pulse-outline"
+                    class="navbar-menu__icon navbar-menu__icon--border"
+                  ></ion-icon>
+                  <span class="navbar-menu__text">#zingchart</span>
+                </a>
+              </li>
+              <li class="navbar-menu__item">
+                <a title="Cá Nhân" href="" class="navbar-menu__link">
+                  <ion-icon
+                    name="radio-outline"
                     class="navbar-menu__icon"
                   ></ion-icon>
-                  <span class="navbar-menu__text">Top 100</span>
+                  <span class="navbar-menu__text">Radio</span>
                 </a>
               </li>
               <li class="navbar-menu__item">
                 <a title="Cá Nhân" href="" class="navbar-menu__link">
                   <ion-icon
-                    name="play-outline"
-                    class="navbar-menu__icon navbar-menu__icon--rectangle"
+                    name="list-outline"
+                    class="navbar-menu__icon navbar-menu__icon--square"
                   ></ion-icon>
-                  <span class="navbar-menu__text">MV</span>
+                  <span class="navbar-menu__text">Theo Dõi</span>
                 </a>
               </li>
             </ul>
           </nav>
-          <div class="sidebar__login">
-            <p class="sidebar__login-title">
-              Đăng nhập để khám phá những playlist dành riêng cho chính bạn.
-            </p>
-            <button class="btn btn-default btn--lg sidebar__login-btn">
-              đăng nhập
-            </button>
+          <div class="zm-sidebar__separate"></div>
+          <div class="zm-sidebar__scrollbar">
+            <nav class="zm-sidebar__main">
+              <ul class="navbar-menu">
+                <li class="navbar-menu__item">
+                  <a title="Cá Nhân" href="" class="navbar-menu__link">
+                    <ion-icon
+                      name="musical-notes-outline"
+                      class="navbar-menu__icon"
+                    ></ion-icon>
+                    <span class="navbar-menu__text">Nhạc Mới</span>
+                  </a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a title="Cá Nhân" href="" class="navbar-menu__link">
+                    <div class="navbar-menu__list-icon">
+                      <div class="row list-icon__row">
+                        <div class="col-lg-6 list-icon__item">
+                          <ion-icon name="tablet-landscape-outline"></ion-icon>
+                        </div>
+                        <div class="col-lg-6 list-icon__item">
+                          <ion-icon name="ellipse-outline"></ion-icon>
+                        </div>
+                        <div class="col-lg-6 list-icon__item">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="col-lg-6 list-icon__item">
+                          <ion-icon name="play-outline"></ion-icon>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="navbar-menu__text">Thể Loại</span>
+                  </a>
+                </li>
+
+                <li class="navbar-menu__item">
+                  <a title="Cá Nhân" href="" class="navbar-menu__link">
+                    <ion-icon
+                      name="star-outline"
+                      class="navbar-menu__icon"
+                    ></ion-icon>
+                    <span class="navbar-menu__text">Top 100</span>
+                  </a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a title="Cá Nhân" href="" class="navbar-menu__link">
+                    <ion-icon
+                      name="play-outline"
+                      class="navbar-menu__icon navbar-menu__icon--rectangle"
+                    ></ion-icon>
+                    <span class="navbar-menu__text">MV</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="sidebar__login">
+              <p class="sidebar__login-title">
+                Đăng nhập để khám phá những playlist dành riêng cho chính bạn.
+              </p>
+              <button class="btn btn-default btn--lg sidebar__login-btn">
+                đăng nhập
+              </button>
+            </div>
           </div>
         </div>
+        <button class="btn zm-btn-sidebar">
+          <ion-icon name="chevron-forward-outline" class="icon"></ion-icon>
+        </button>
       </aside>
       <!-- Header -->
       <header class="zm-header">
@@ -450,7 +447,7 @@
               <div class="zm-slider-wrapper">
                 <div class="zm-slider">
                   <div class="row row--slider">
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -498,7 +495,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -542,7 +539,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -586,7 +583,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -630,7 +627,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -674,7 +671,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -718,7 +715,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -762,7 +759,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -835,7 +832,7 @@
               <div class="zm-slider-wrapper">
                 <div class="zm-slider">
                   <div class="row row--slider">
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -886,7 +883,7 @@
               <div class="zm-slider-wrapper">
                 <div class="zm-slider">
                   <div class="row row--slider">
-                    <div class="col col-lg-2-4 slider-item">
+                    <div class="col col-lg-2-4">
                       <div class="zm-card">
                         <div class="zm-card__link">
                           <a href="">
@@ -1113,7 +1110,7 @@
               </div>
             </div>
           </div>
-          <!-- Zing Chart -->
+          <!-- Zing chart -->
           <div class="zm-section zm-zing-chart-section">
             <div class="zm-zing-chart">
               <div class="row">
@@ -1145,68 +1142,130 @@
               </div>
             </div>
           </div>
-          <!-- New Release -->
-          <div class="zm-section zm-new-release-section">
-            <h3 class="zm-section-title">Mới phát hành</h3>
-            <div class="zm-slider-wrapper">
-              <div class="zm-slider zm-slider-new-release">
-                <div class="row row--slider">
-                  <div class="col col-lg-4">
-                    <div class="zm-new-release-item">
-                      <div class="zm-media">
-                        <div class="zm-media__left">
-                          <div class="zm-card">
-                            <div class="zm-card__link mb-0">
-                              <div class="zm-card__image is-120x120">
-                                <figure class="card-image">
-                                  <img
-                                    src="./assets/images/shortcut_1.jpg"
-                                    alt="alt"
-                                    class="card-img"
-                                  />
-                                </figure>
-                                <div class="card-opacity"></div>
-                                <div class="card-actions">
-                                  <div class="card-actions__event">
-                                    <button
-                                      class="btn btn-play btn--action"
-                                    ></button>
-                                  </div>
+          <!-- Live stream -->
+          <div class="zm-section zm-livestream-section">
+            <div class="zm-section-wrapper">
+              <div class="zm-slider-wrapper">
+                <div class="zm-slider">
+                  <div class="row row--slider">
+                    <div class="col col-lg-1-7">
+                      <div class="zm-card">
+                        <div class="zm-card__link">
+                          <a href="">
+                            <div class="zm-card__image">
+                              <figure class="card-image">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="card-img"
+                                />
+                              </figure>
+                              <div class="card-opacity"></div>
+                              <div class="card-actions">
+                                <div class="card-actions__event">
+                                  <button class="btn btn--action">
+                                    <ion-icon
+                                      name="heart-outline"
+                                      class="icon"
+                                    ></ion-icon></button
+                                  ><button
+                                    class="btn btn-play btn--action"
+                                  ></button
+                                  ><button class="btn btn--action">
+                                    <ion-icon
+                                      name="ellipsis-horizontal-outline"
+                                      class="icon"
+                                    ></ion-icon>
+                                  </button>
                                 </div>
                               </div>
                             </div>
-                          </div>
+                            <figure class="zm-card__brand-host">
+                              <img
+                                src="./assets/images/shortcut_1.jpg"
+                                alt="alt"
+                              />
+                            </figure>
+                            <div class="zm-card__brand-label">live</div>
+                          </a>
                         </div>
-                        <div class="zm-media__right">
-                          <div class="box-text">
-                            <h3 class="box-text__title">Chưa Từng Vì Nhau</h3>
-                            <h4 class="box-text__subtitle">Vũ Phụng Tiên</h4>
-                          </div>
-                          <div class="box-text-release">
-                            <span class="text-order">#7</span>
-                            <span class="text-release-date">11.08.2021</span>
-                          </div>
+                        <div class="zm-card__content">
+                          <h3 class="card-title">
+                            <a href="" class="title__link">On Air</a>
+                          </h3>
+                          <h4 class="card-subtitle">77 đang nghe</h4>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="zm-slider-actions">
-                <button
-                  class="btn btn--disabled btn-slider-control btn-slider-prev"
-                >
-                  <ion-icon
-                    name="chevron-back-outline"
-                    class="icon icon--control"
-                  ></ion-icon>
-                </button>
-                <button class="btn btn-slider-control btn-slider-next">
-                  <ion-icon
-                    name="chevron-forward-outline"
-                    class="icon icon--control"
-                  ></ion-icon>
-                </button>
+            </div>
+          </div>
+          <!-- New release -->
+          <div class="zm-section zm-new-release-section">
+            <div class="zm-section-wrapper">
+              <h3 class="zm-section-title">Mới phát hành</h3>
+              <div class="zm-slider-wrapper">
+                <div class="zm-slider zm-slider-new-release">
+                  <div class="row row--slider">
+                    <div class="col col-lg-4">
+                      <div class="zm-new-release-item">
+                        <div class="zm-media">
+                          <div class="zm-media__left">
+                            <div class="zm-card">
+                              <div class="zm-card__link mb-0">
+                                <div class="zm-card__image is-120x120">
+                                  <figure class="card-image">
+                                    <img
+                                      src="./assets/images/shortcut_1.jpg"
+                                      alt="alt"
+                                      class="card-img"
+                                    />
+                                  </figure>
+                                  <div class="card-opacity"></div>
+                                  <div class="card-actions">
+                                    <div class="card-actions__event">
+                                      <button
+                                        class="btn btn-play btn--action"
+                                      ></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="zm-media__right">
+                            <div class="box-text">
+                              <h3 class="box-text__title">Chưa Từng Vì Nhau</h3>
+                              <h4 class="box-text__subtitle">Vũ Phụng Tiên</h4>
+                            </div>
+                            <div class="box-text-release">
+                              <span class="text-order">#7</span>
+                              <span class="text-release-date">11.08.2021</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="zm-slider-actions">
+                  <button
+                    class="btn btn--disabled btn-slider-control btn-slider-prev"
+                  >
+                    <ion-icon
+                      name="chevron-back-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                  <button class="btn btn-slider-control btn-slider-next">
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1329,66 +1388,68 @@
           </div>
           <!-- MV Hot -->
           <div class="zm-section zm-mv-section">
-            <div class="zm-section-title">MV hot</div>
-            <div class="zm-slider-wrapper">
-              <div class="zm-slider zm-slider-mv">
-                <div class="row row--slider">
-                  <div class="col col-lg-4">
-                    <div class="zm-card">
-                      <div class="zm-card__link mb-0">
-                        <a href="">
-                          <div class="zm-card__image is-210x120">
-                            <figure class="card-image">
-                              <img
-                                src="./assets/images/shortcut_1.jpg"
-                                alt="alt"
-                                class="card-img"
-                              />
-                            </figure>
-                            <div class="card-opacity"></div>
-                            <div class="card-actions">
-                              <div class="card-actions__event">
-                                <button
-                                  class="btn btn-play btn--action"
-                                ></button>
+            <div class="zm-section-wrapper">
+              <div class="zm-section-title">MV hot</div>
+              <div class="zm-slider-wrapper">
+                <div class="zm-slider zm-slider-mv">
+                  <div class="row row--slider">
+                    <div class="col col-lg-4">
+                      <div class="zm-card">
+                        <div class="zm-card__link mb-0">
+                          <a href="">
+                            <div class="zm-card__image is-210x120">
+                              <figure class="card-image">
+                                <img
+                                  src="./assets/images/shortcut_1.jpg"
+                                  alt="alt"
+                                  class="card-img"
+                                />
+                              </figure>
+                              <div class="card-opacity"></div>
+                              <div class="card-actions">
+                                <div class="card-actions__event">
+                                  <button
+                                    class="btn btn-play btn--action"
+                                  ></button>
+                                </div>
+                              </div>
+                              <div class="card-brand">04:14</div>
+                              <div class="card-brand-vip">
+                                <div class="vip-label"></div>
                               </div>
                             </div>
-                            <div class="card-brand">04:14</div>
-                            <div class="card-brand-vip">
-                              <div class="vip-label"></div>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="zm-card__content">
-                        <div class="content-mv">
-                          <div class="zm-media">
-                            <div class="zm-media__left">
-                              <a href="">
-                                <div class="song-thumbnail is-rounded">
-                                  <figure class="song-image is-40x40">
-                                    <img
-                                      src="./assets/images/shortcut_1.jpg"
-                                      alt="alt"
-                                      class="song-img"
-                                    />
-                                  </figure>
+                          </a>
+                        </div>
+                        <div class="zm-card__content">
+                          <div class="content-mv">
+                            <div class="zm-media">
+                              <div class="zm-media__left">
+                                <a href="">
+                                  <div class="song-thumbnail is-rounded">
+                                    <figure class="song-image is-40x40">
+                                      <img
+                                        src="./assets/images/shortcut_1.jpg"
+                                        alt="alt"
+                                        class="song-img"
+                                      />
+                                    </figure>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="zm-media__right">
+                                <div class="box-text">
+                                  <h3 class="box-text__title">
+                                    <a href="" class="title-link">
+                                      Chưa Từng Vì Nhau
+                                    </a>
+                                  </h3>
+                                  <h4 class="box-text__subtitle">
+                                    <a href="" class="subtitle-link"
+                                      >Vũ Phụng Tiên</a
+                                    >,
+                                    <a href="" class="subtitle-link">ACV</a>
+                                  </h4>
                                 </div>
-                              </a>
-                            </div>
-                            <div class="zm-media__right">
-                              <div class="box-text">
-                                <h3 class="box-text__title">
-                                  <a href="" class="title-link">
-                                    Chưa Từng Vì Nhau
-                                  </a>
-                                </h3>
-                                <h4 class="box-text__subtitle">
-                                  <a href="" class="subtitle-link"
-                                    >Vũ Phụng Tiên</a
-                                  >,
-                                  <a href="" class="subtitle-link">ACV</a>
-                                </h4>
                               </div>
                             </div>
                           </div>
@@ -1397,26 +1458,26 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="zm-slider-actions">
-                <button
-                  class="btn btn--disabled btn-slider-control btn-slider-prev"
-                >
-                  <ion-icon
-                    name="chevron-back-outline"
-                    class="icon icon--control"
-                  ></ion-icon>
-                </button>
-                <button class="btn btn-slider-control btn-slider-next">
-                  <ion-icon
-                    name="chevron-forward-outline"
-                    class="icon icon--control"
-                  ></ion-icon>
-                </button>
+                <div class="zm-slider-actions">
+                  <button
+                    class="btn btn--disabled btn-slider-control btn-slider-prev"
+                  >
+                    <ion-icon
+                      name="chevron-back-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                  <button class="btn btn-slider-control btn-slider-next">
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      class="icon icon--control"
+                    ></ion-icon>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Mix Zing Choice -->
+          <!-- Mix zing choice -->
           <div class="zm-section zm-mix-section">
             <h3 class="zm-section-title">mix zing choice</h3>
             <div class="zm-mix">
@@ -1755,7 +1816,140 @@
         </div>
       </section>
       <!-- Playing bar -->
-      <section class="playing-bar">Playing bar</section>
+      <section class="zm-playing-bar">
+        <div class="zm-player-controls">
+          <div class="zm-player-controls__left">
+            <div class="zm-media">
+              <div class="zm-media__left">
+                <div class="song-prefix">
+                  <span class="number-rating">1</span>
+                </div>
+                <div class="song-thumbnail is-rounded">
+                  <figure class="song-image is-60x60">
+                    <img
+                      src="./assets/images/shortcut_1.jpg"
+                      alt="alt"
+                      class="song-img"
+                    />
+                  </figure>
+                  <div class="song-opacity"></div>
+                  <div class="song-actions">
+                    <button class="btn btn--action"></button>
+                  </div>
+                </div>
+                <div class="song-info">
+                  <div class="box-text">
+                    <h3 class="box-text__title">Chưa Từng Vì Nhau</h3>
+                    <h4 class="box-text__subtitle">
+                      <a href="https://facebook.com" class="subtitle-link"
+                        >Vũ Phụng Tiên</a
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="zm-media__right">
+                <div class="box-actions">
+                  <div class="box-item">
+                    <button class="btn btn--actions">
+                      <ion-icon
+                        name="heart-outline"
+                        class="icon"
+                        role="img"
+                        aria-label="megaphone outline"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                  <div class="box-item">
+                    <button class="btn btn--actions">
+                      <ion-icon
+                        name="ellipsis-horizontal-outline"
+                        class="icon"
+                        role="img"
+                        aria-label="ellipsis horizontal outline"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="zm-player-controls__player-bar">
+            <div class="player-bar__control">
+              <button class="btn btn-control-shuffle is-hover-circle">
+                <ion-icon name="shuffle-outline" class="icon"></ion-icon>
+              </button>
+              <button class="btn btn-control-prev is-hover-circle">
+                <ion-icon name="play-skip-back-outline" class="icon"></ion-icon>
+              </button>
+              <button class="btn btn-control-play">
+                <!-- <ion-icon name="play-outline" class="icon"></ion-icon> -->
+                <ion-icon name="pause-outline" class="icon"></ion-icon>
+              </button>
+              <button class="btn btn-control-next is-hover-circle">
+                <ion-icon
+                  name="play-skip-forward-outline"
+                  class="icon"
+                ></ion-icon>
+              </button>
+              <button class="btn btn-control-repeat is-hover-circle">
+                <ion-icon name="repeat-outline" class="icon"></ion-icon>
+              </button>
+            </div>
+            <div class="player-bar__progress">
+              <span class="time-progress progress-left">00:09</span>
+              <div class="progressBar">
+                <input
+                  type="range"
+                  value="0"
+                  step="1"
+                  min="0"
+                  max="100"
+                  class="progressBar-input"
+                />
+              </div>
+              <span class="time-progress progress-right">05:42</span>
+            </div>
+            <audio src="" class="player-bar__audio"></audio>
+          </div>
+          <div class="zm-player-controls__right">
+            <div class="player-controls__item">
+              <button class="btn btn-control-mv is-hover-circle">
+                <i class="fal fa-list-alt icon"></i>
+              </button>
+            </div>
+            <div class="player-controls__item">
+              <button class="btn btn-control-mic is-hover-circle">
+                <i class="fal fa-microphone-stand icon"></i>
+              </button>
+            </div>
+            <div class="player-controls__item player-controls__volume">
+              <button class="btn btn-control-volume is-hover-circle">
+                <!-- <i class="fal fa-volume-mute icon"></i> -->
+                <i class="fal fa-volume icon"></i>
+              </button>
+              <div class="progressBar">
+                <input
+                  type="range"
+                  value="0"
+                  step="1"
+                  min="0"
+                  max="100"
+                  class="progressBar-input"
+                />
+              </div>
+            </div>
+            <div class="player-controls__item">
+              <div class="separate"></div>
+            </div>
+            <div class="player-controls__item">
+              <button class="btn btn-control-lmusic is-hover-square">
+                <i class="fal fa-list-music icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Modal -->

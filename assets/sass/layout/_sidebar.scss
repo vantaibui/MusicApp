@@ -17,8 +17,12 @@
   background-color: $bg-sidebar-0;
   padding-top: $padding-2;
   padding-bottom: 54px;
+  .zm-sidebar-wrapper {
+    height: 100%;
+  }
+
   .zm-sidebar__logo {
-    @include flex-box(center, center);
+    @include flex-box(flex-start, center);
     padding: $padding-1 $padding-10 + 1 $padding-1 $padding-11 + 2;
     .zm-logo {
       width: 120px;
@@ -58,7 +62,7 @@
 
         font-size: 1.3rem;
         font-weight: $fw-bold;
-        padding: $padding-2 + 1 $padding-11;
+        padding: $padding-2 - 1 $padding-11 - 1;
         .navbar-menu__icon {
           width: 2.4rem;
           height: 2.4rem;
@@ -130,7 +134,7 @@
       }
     }
   }
-  .sidebar__separate {
+  .zm-sidebar__separate {
     position: relative;
     &::after {
       content: "";
@@ -141,7 +145,7 @@
       border-top: 1px solid hsla(0, 0%, 100%, 0.1);
     }
   }
-  .sidebar__scrollbar {
+  .zm-sidebar__scrollbar {
     margin-top: $margin-3;
     .sidebar__login {
       margin: $margin-6 $margin-6 0;
@@ -158,17 +162,68 @@
       min-width: 100%;
     }
   }
+  .zm-btn-sidebar {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: $color-purple-3;
+    @include flex-box(center, center);
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .zm-sidebar {
     width: 70px;
     background-color: $bg-sidebar-1;
-    transition: width ease 2s;
+    transition: width ease 0.8s;
+
+    &.is-expanded {
+      width: 240px;
+      background-color: $bg-sidebar-1;
+      .zm-sidebar__logo {
+        justify-content: flex-start;
+        padding: $padding-4 $padding-11;
+        .zm-logo {
+          width: 120px;
+          height: 40px;
+          background-image: url("../../../assets/images/logo-dark.svg");
+          transition: background-image linear 0.8s;
+        }
+      }
+      .zm-sidebar__main {
+        .navbar-menu__item {
+          .navbar-menu__link {
+            justify-content: flex-start;
+            padding: $padding-3 $padding-11;
+            .navbar-menu__icon {
+              margin-right: $margin-3;
+            }
+          }
+          .navbar-menu__text {
+            display: block;
+            animation: fadeIn linear 4s;
+          }
+        }
+      }
+      .zm-btn-sidebar {
+        left: unset;
+        right: 0;
+      }
+    }
+
     .zm-sidebar__logo {
       padding-top: $padding-0;
       padding-left: 0;
       padding-right: 0;
+      justify-content: center;
       .zm-logo {
         width: 45px;
         height: 45px;
@@ -177,10 +232,25 @@
     }
     .zm-sidebar__main {
       .navbar-menu__item {
+        border: none;
+        .navbar-menu__link {
+          justify-content: center;
+          padding: $padding-5 + 1 0;
+
+          .navbar-menu__icon {
+            margin-right: 0;
+          }
+        }
         .navbar-menu__text {
           display: none;
         }
       }
+    }
+    .zm-sidebar__scrollbar {
+      display: none;
+    }
+    .zm-btn-sidebar {
+      display: block;
     }
   }
 }

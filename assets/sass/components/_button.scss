@@ -55,11 +55,37 @@
   }
   &.btn-circle {
     @include flex-box(center, center);
-    width: 55px;
-    height: 55px;
     padding: 0;
     border-radius: 50%;
     border: 2px solid $color-white-0;
+  }
+  &.is-hover-circle,
+  &.is-hover-square {
+    position: relative;
+    padding: $padding-2;
+    margin: 0 $margin-2 - 1;
+    @include flex-box(center, center);
+    &::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      border-radius: 50%;
+      background-color: #423a4b;
+      border: 2px solid #423a4b;
+
+      transition: all ease 0.6s;
+      visibility: hidden;
+      opacity: 0;
+    }
+    &:hover::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &.is-hover-square {
+    &:before {
+      border-radius: 4px;
+    }
   }
 }
 .btn--disabled {

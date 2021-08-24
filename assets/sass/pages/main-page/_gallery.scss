@@ -19,7 +19,7 @@
     top: 54%;
     left: 25px;
     transform: translateY(-50%);
-    transition: opacity linear 0.8s;
+    transition: opacity linear 0.6s;
     z-index: 2;
     opacity: 0;
     &.zm-gallery-next {
@@ -27,6 +27,8 @@
       right: 25px;
     }
     .btn {
+      width: 55px;
+      height: 55px;
       border: none;
       background-color: hsla(0, 0%, 100%, 0.15);
       box-shadow: 0 2px 4px 0 rgba(226, 102, 102, 0.15);

@@ -37,9 +37,21 @@ buttons.forEach((button) => {
   });
 });
 
+// Sidebar
+const buttonSidebar = $(".zm-sidebar > .zm-btn-sidebar");
+const iconSidebar = buttonSidebar.querySelector(".icon");
+const sidebar = $(".zm-sidebar");
+buttonSidebar.addEventListener("click", function () {
+  sidebar.classList.toggle("is-expanded");
+  iconSidebar.getAttribute("name").indexOf("forward") !== -1
+    ? iconSidebar.setAttribute("name", "chevron-back-outline")
+    : iconSidebar.setAttribute("name", "chevron-forward-outline");
+});
+
 // Slider
 const btnActionControls = $$(".btn-slider-control");
-const sliders = $$(".slider");
+const sliders = $$(".zm-slider");
+console.log(sliders);
 
 function scrollSlider(direction) {
   sliders.forEach(function (slider) {

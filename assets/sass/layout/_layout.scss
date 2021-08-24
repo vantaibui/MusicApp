@@ -1,35 +1,37 @@
 .layout {
-  display: flex;
+  position: relative;
+  // display: flex;
   width: 100%;
-  min-width: 768px;
-  // height: 100vh;
+  // min-width: 768px;
+  height: 100vh;
+
+  &.has-player {
+    .zm-sidebar {
+      height: calc(100vh - 90px);
+    }
+  }
 
   .zm-sidebar {
-    flex-basis: 240px;
-    max-width: 240px;
-    height: 100vh;
+    width: 240px;
+    // height: 100vh;
   }
   .zm-main-page {
-    flex-basis: calc(100% - 240px);
-    max-width: calc(100% - 240px);
-
     position: relative;
     top: 0;
     left: 240px;
     right: 0;
+    width: calc(100% - 240px);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .layout {
     .zm-sidebar {
-      flex-basis: 70px;
-      max-width: 70px;
-      height: 100vh;
+      width: 70px;
+      // height: 100vh;
     }
     .zm-main-page {
-      flex-basis: calc(100% - 70px);
-      max-width: calc(100% - 70px);
+      width: calc(100% - 70px);
       left: 70px;
     }
   }

@@ -7,7 +7,6 @@
 
 // Base
 @import "./base/normalized";
-@import "./base/grid";
 @import "./base/spacing";
 @import "./base/reset";
 @import "./base/base";
@@ -23,6 +22,7 @@
 @import "./components/modal";
 
 // Layout
+@import "./layout/grid";
 @import "./layout/layout";
 @import "./layout/sidebar";
 @import "./layout/header";

@@ -133,7 +133,7 @@
           width: 100%;
           padding: $padding-5 $padding-3;
           .event-tag {
-            @extend %span-0;
+            @extend %label-0;
           }
           .event-title {
             margin: $margin-0 0;
@@ -191,12 +191,14 @@
     }
     .card-subtitle {
       line-height: 1.33;
+      cursor: default;
       &:hover {
         a {
           color: $color-purple-1;
           text-decoration: underline;
         }
       }
+      &,
       a {
         transition: all ease 0.3s;
         @include text(rgba($color-gray-2, 0.5), 1.3rem, $fw-regular);
