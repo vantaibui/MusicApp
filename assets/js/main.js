@@ -38,14 +38,28 @@ buttons.forEach((button) => {
 });
 
 // Sidebar
-const buttonSidebar = $(".zm-sidebar > .zm-btn-sidebar");
-const iconSidebar = buttonSidebar.querySelector(".icon");
+const btnSidebar = $(".zm-sidebar > .zm-btn-sidebar");
+const iconSidebar = btnSidebar.querySelector(".icon");
 const sidebar = $(".zm-sidebar");
-buttonSidebar.addEventListener("click", function () {
+btnSidebar.addEventListener("click", function () {
   sidebar.classList.toggle("is-expanded");
   iconSidebar.getAttribute("name").indexOf("forward") !== -1
     ? iconSidebar.setAttribute("name", "chevron-back-outline")
     : iconSidebar.setAttribute("name", "chevron-forward-outline");
+});
+
+// PLayer control volume
+const btnVolume = $(".player-controls__volume");
+const children = btnVolume.children;
+btnVolume.addEventListener("click", function () {
+  for (let i = 0; i < children.length; i++) {
+    children[i].classList.value === "progressBar"
+      ? (children[i].classList.add("active"),
+        setTimeout(function () {
+          children[i].classList.remove("active");
+        }, 2000))
+      : "";
+  }
 });
 
 // Slider

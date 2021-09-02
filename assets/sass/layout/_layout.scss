@@ -5,15 +5,16 @@
   // min-width: 768px;
   height: 100vh;
 
-  &.has-player {
-    .zm-sidebar {
-      height: calc(100vh - 90px);
-    }
+  // &.has-player {
+  //   .zm-sidebar {
+  //     height: calc(100vh - 90px);
+  //   }
+  // }
+  .zm-playing-bar {
+    display: none;
   }
-
   .zm-sidebar {
     width: 240px;
-    // height: 100vh;
   }
   .zm-main-page {
     position: relative;
@@ -28,7 +29,6 @@
   .layout {
     .zm-sidebar {
       width: 70px;
-      // height: 100vh;
     }
     .zm-main-page {
       width: calc(100% - 70px);
